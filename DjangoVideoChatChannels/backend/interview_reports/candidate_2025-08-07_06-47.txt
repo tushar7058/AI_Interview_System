@@ -1,0 +1,23 @@
+Candidate Name: Candidate
+Interview Time: 2025-08-07_06-47
+
+Q: Tell me about a time you had to quickly learn a new technology or skill to complete a project. What was your approach?
+A: So file, any learning new skills. Um, my approaches is that uh, do from the
+Feedback: Feedback generated using fallback similarity method. (Score: 4.7/10)
+
+Q: Tell me about a time you had to quickly learn a new technology or skill to complete a project. What was your approach?
+A: practicing more, that
+Feedback: Feedback generated using fallback similarity method. (Score: 2.5/10)
+
+Q: How do you stay updated with the latest advancements and trends in software development and cybersecurity?
+A: No, I don't know about that much. So you can ask me any kind of
+Feedback: Feedback generated using fallback similarity method. (Score: 0.7/10)
+
+Q: Given your experience, what are some common security vulnerabilities you've encountered in web applications, and how would you mitigate them?
+A: I don't know, I have experience about the developing AI systems, like you,
+Feedback: Feedback generated using fallback similarity method. (Score: 0.7/10)
+
+Q: Given your experience, what are some common security vulnerabilities you've encountered in web applications, and how would you mitigate them?
+A: That's it.
+Feedback: Feedback generated using fallback similarity method. (Score: 0.5/10)
+

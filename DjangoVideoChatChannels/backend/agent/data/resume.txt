@@ -1,0 +1,60 @@
+                                          Tushar Kale
+EDUCATION                                  EXPERIENCE
+B.TECH IN COMPUTER SCIENCE MGS TECHNOLOGY PVT LTD | Data Science Intern – HireUp
+MIT College of Railway                     Product
+Engineering and Research ,                 June 2025 – Present | Pune, India
+Barshi                                        • Built and deployed an AI-powered interview system using Python, FastAPI,
+Aug 2021 – May 2025 | GPA: 8.02 / 10            and OpenAI APIs, reducing manual evaluation by 70%.
+                                              • Developed an interactive AI agent to conduct interviews, generate questions,
+                                                and analyze candidate responses in real-time.
+LINKS                                         • Designed an NLP-based performance evaluation engine, improving candidate
+CodeForces:// tusharkale816                     shortlisting accuracy by 85%.
+Github:// tushar7058
+LinkedIn:// tushar-kale5
+Twitter:// @tusharkale816                  PHN TECHNOLOGY PVT LTD | R&D Intern
+Leetcode:// tusharkale7058                 Jan 2025 – May 2025 | Pune, India
+
+                                              • Developed AI quiz evaluator using Python and Django with NLP techniques,
+COURSEWORK                                      achieving 85% grading accuracy and reducing manual effort by 60%.
+Machine Learning                              • Built course recommendation engine using Scikit-learn and collaborative
+Deep Learning                                   filtering, increasing user engagement by 40%.
+Data Structure & Algorithms                   • Fine-tuned BERT model (Hugging Face) for forum query classification, reaching
+Computer Networks                               92% accuracy in intent detection.
+Operating System
+Artificial Intelligence
+Natural Language Processing                PROJECTS
+                                           GESTURE & VOICE-CONTROLLED AI VIRTUAL MOUSE
+SKILLS
+                                              • Built real-time gesture recognition system using OpenCV and MediaPipe,
+PROGRAMMING                                     achieving 98% accuracy and 50ms latency with multi-threading.
+Python(Advance) • SQL • Java                  • Integrated voice command recognition using Python for hands-free
+Familiar :                                      operations, enhancing accessibility for disabled users.
+Git • GitHub • GitLab • Jenkins
+                                              • Implemented adaptive cursor algorithms, reducing false positives by 40% over
+AI / ML                                         existing solutions.
+TensorFlow • PyTorch • Transformers
+Generative AI • Agentic AI • Machine       HOTEL RESERVATION SYSTEM – END-TO-END ML PROJECT
+Learning • Deep Learning
+                                              • Developed and deployed an end-to-end hotel reservation prediction system
+• Natural Language Processing
+                                                with MLflow for experiment tracking and model management.
+CLOUD PLATFORMS                               • Automated full ML pipeline using Jenkins CI/CD and deployed scalable models
+AWS SageMaker • GCP Vertex AI                   on Google Cloud Platform (GCP).
+                                              • Implemented production-grade MLOps workflow covering data ingestion,
+MLOPS / DEPLOYMENT                              training, evaluation, deployment, and monitoring.
+Docker • MLflow • FastAPI • Streamlit
+DVC • Flask • Django • LangChain
+• OpenAI API • LLM • Hugging Face
+                                           ACHIEVEMENTS
+Transformers                                  • AI Hackathon 2024 SVERI College of Engg (National Level)
+                                                Ranked Top 5 among 30+ teams for developing an NLP-powered resume
+                                                screening tool. Achieved 92% accuracy in candidate-job matching using BERT
+CERTIFICATIONS                                  and cosine similarity.
+Supervised Machine Learning:                  • Outstanding Technical Contributor - PHN Technology Pvt Ltd (2025)
+Regression and Classification                 • Competitive Programmer
+DeepLearning.AI | Aug 2024             |        Solved 150+ algorithmic problems on LeetCode, GeeksforGeeks, and
+Credential ID: EJFZNLBCV63T                     Codeforces. Consistently ranked in the Top 25% of weekly coding contests.
+Introduction to Generative AI
+Google | Mar 2024 |
+Credential ID: 8347654
+
