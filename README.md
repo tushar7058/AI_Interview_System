@@ -2,7 +2,7 @@
 
 ⸻
 
-🎯 AI Interview System
+## 🎯 AI Interview System
 
 An AI-powered video interview platform that delivers realistic, structured, and automated candidate interviews.
 It features a static AI interviewer avatar that asks dynamic, role-specific questions, listens via real-time transcription, evaluates answers, and generates a performance summary.
