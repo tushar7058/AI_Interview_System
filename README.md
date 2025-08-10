@@ -1,135 +1,179 @@
+# 🎯 AI Interview System - Production Ready Deployment Guide  
 
+An AI-powered video interview platform that delivers **realistic, automated candidate assessments** with dynamic questioning, real-time transcription, and performance analytics.  
 
-⸻
+---
 
-## 🎯 AI Interview System
+## 🚀 **Key Features**  
 
-An AI-powered video interview platform that delivers realistic, structured, and automated candidate interviews.
-It features a static AI interviewer avatar that asks dynamic, role-specific questions, listens via real-time transcription, evaluates answers, and generates a performance summary.
+✅ **AI Interviewer Avatar** – Static video tile with natural-sounding TTS (Text-to-Speech)  
+✅ **Dynamic Questioning** – Role-specific questions based on job description, resume, and responses  
+✅ **Real-Time Transcription** – Powered by Google Cloud Speech-to-Text  
+✅ **Automated Evaluation** – Assesses relevance, clarity, and completeness of answers  
+✅ **Interview Summary** – AI-generated performance report post-interview  
 
-⸻
+---
 
-📌 Features
-	•	🎭 Static AI Interviewer Avatar
-Appears as a static video tile — no live audio/video from the agent.
-	•	🧠 Dynamic Questioning
-AI generates concise, role-specific questions based on:
-	•	Job description
-	•	Candidate resume
-	•	Self-introduction
-	•	Previous answers
-	•	🎙 Live Transcription
-Real-time transcription using Google Cloud Speech-to-Text.
-	•	🔊 Text-to-Speech
-AI questions converted into natural-sounding speech via Google Cloud Text-to-Speech.
-	•	⚡ Auto-Start Interviews
-The AI interviewer starts automatically when the candidate joins.
-	•	📈 Answer Evaluation (Implemented / Planned)
-Evaluates answers for relevance, completeness, and clarity.
-	•	📝 Interview Summarization (Implemented / Planned)
-Generates a summary of candidate performance.
+## 🛠 **Tech Stack**  
 
-⸻
+| Layer               | Technology |
+|---------------------|------------|
+| **Frontend**        | HTML5, CSS3, JavaScript (Vanilla) |
+| **Backend**         | Django (Python) |
+| **Real-Time Comms** | WebRTC (video/audio), WebSockets (signaling) |
+| **AI/LLM**          | Google Gemini (Q&A generation, evaluation) |
+| **Speech**          | Google Cloud Speech-to-Text & Text-to-Speech |
+| **Deployment**      | Nginx + Gunicorn + Daphne (ASGI) |
+| **Database**        | PostgreSQL (Production) / SQLite (Dev) |
 
-🛠 Tech Stack
+---
 
-Layer	Technology
-Frontend	HTML5, CSS3, JavaScript (Vanilla)
-Backend	Django (Python)
-Real-Time	WebRTC (video/audio), WebSockets (signaling, transcription)
-AI/LLM	Google Gemini (question generation, evaluation)
-Speech	Google Cloud Speech-to-Text, Google Cloud Text-to-Speech
-Deploy	Nginx + Gunicorn + Daphne (local or cloud)
+## 🚀 **Production Deployment**  
 
+### **Prerequisites**  
+- Linux server (Ubuntu 22.04 recommended)  
+- Domain & SSL certificate (Let’s Encrypt)  
+- Google Cloud service account (for Speech & Gemini APIs)  
 
-⸻
-
-🚀 Installation & Setup
-
-1️⃣ Clone the Repository
-
-git clone https://github.com/yourusername/ai-interview-system.git
+### **1️⃣ Clone & Setup**  
+```bash
+git clone https://github.com/tushar7058/ai-interview-system.git
 cd ai-interview-system
-
-2️⃣ Create a Virtual Environment
-
 python -m venv venv
-source venv/bin/activate   # Mac/Linux
-venv\Scripts\activate      # Windows
-
-3️⃣ Install Dependencies
-
+source venv/bin/activate
 pip install -r requirements.txt
+```
 
-4️⃣ Configure Environment Variables
-
-Create a .env file in the root:
-
-GOOGLE_CLOUD_PROJECT=your_project_id
+### **2️⃣ Configure Environment**  
+Create `.env` in the project root:  
+```env
+# Google Cloud
+GOOGLE_CLOUD_PROJECT=your-project-id
 GOOGLE_APPLICATION_CREDENTIALS=/path/to/service-account.json
-GEMINI_API_KEY=your_gemini_api_key
+GEMINI_API_KEY=your_api_key
 
-5️⃣ Apply Migrations
+# Django (Production)
+SECRET_KEY=your_django_secret_key
+DEBUG=False
+ALLOWED_HOSTS=yourdomain.com,www.yourdomain.com
+DATABASE_URL=postgres://user:password@localhost:5432/db_name
+```
 
+### **3️⃣ Database Setup (PostgreSQL)**  
+```bash
+sudo apt install postgresql postgresql-contrib
+sudo -u postgres psql
+CREATE DATABASE ai_interviews;
+CREATE USER ai_user WITH PASSWORD 'secure_password';
+GRANT ALL PRIVILEGES ON DATABASE ai_interviews TO ai_user;
+```
+
+### **4️⃣ Run Migrations**  
+```bash
 python manage.py migrate
+python manage.py collectstatic
+```
 
-6️⃣ Start the Development Server
+### **5️⃣ Configure Gunicorn + Daphne (ASGI)**  
+Create `gunicorn.service` (`/etc/systemd/system/gunicorn.service`):  
+```ini
+[Unit]
+Description=Gunicorn Django ASGI
+After=network.target
 
-daphne -p 8080 backend.asgi:application
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/path/to/ai-interview-system
+ExecStart=/path/to/venv/bin/gunicorn --bind unix:/tmp/gunicorn.sock backend.asgi:application -k uvicorn.workers.UvicornWorker
+Restart=always
 
+[Install]
+WantedBy=multi-user.target
+```
+Start Gunicorn:  
+```bash
+sudo systemctl start gunicorn
+sudo systemctl enable gunicorn
+```
 
-⸻
+### **6️⃣ Nginx Configuration**  
+Edit `/etc/nginx/sites-available/ai_interview`:  
+```nginx
+server {
+    listen 80;
+    server_name yourdomain.com;
 
-📡 How It Works
-	1.	Candidate Joins → Candidate connects via web UI, AI avatar appears.
-	2.	Automatic Start → AI greets and begins asking questions.
-	3.	Live Transcription → Candidate’s voice transcribed in real time.
-	4.	Dynamic Flow → Next question based on prior answers & context.
-	5.	Evaluation & Summary → AI evaluates and summarizes the interview.
+    location / {
+        proxy_pass http://unix:/tmp/gunicorn.sock;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
 
-⸻
+    location /static/ {
+        alias /path/to/ai-interview-system/staticfiles/;
+    }
 
-🧩 API Endpoints
+    location /ws/ {
+        proxy_pass http://unix:/tmp/gunicorn.sock;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+    }
+}
+```
+Enable & restart Nginx:  
+```bash
+sudo ln -s /etc/nginx/sites-available/ai_interview /etc/nginx/sites-enabled
+sudo nginx -t
+sudo systemctl restart nginx
+```
 
-Endpoint	Method	Description
-/agent/ask/	POST	Sends transcript, returns next question
-/agent/evaluate/	POST	Evaluates a candidate answer
-/agent/summary/	GET	Returns interview summary
+### **7️⃣ HTTPS (SSL) Setup**  
+```bash
+sudo apt install certbot python3-certbot-nginx
+sudo certbot --nginx -d yourdomain.com
+```
 
+---
 
-⸻
+## 📡 **System Workflow**  
 
-📷 Project Screenshots
+1. **Candidate Joins** → Web UI connects, AI avatar appears.  
+2. **Auto-Start** → AI greets and begins dynamic questioning.  
+3. **Real-Time Transcription** → Speech-to-Text processes responses.  
+4. **Dynamic Flow** → Next question adapts based on prior answers.  
+5. **Evaluation & Summary** → AI generates performance report.  
 
-Add your screenshots to the images/ folder, then update the paths below.
-Keep file sizes optimized (under 500KB each) for faster loading.
+---
 
-Main interview interface with candidate video & AI avatar.
+## 🔌 **API Endpoints**  
 
-Dynamic AI-generated question sequence.
+| Endpoint            | Method | Description |
+|---------------------|--------|-------------|
+| `/agent/ask/`       | POST   | Get next AI-generated question |
+| `/agent/evaluate/`  | POST   | Evaluate candidate response |
+| `/agent/summary/`   | GET    | Retrieve interview summary |
 
-Real-time transcription of candidate responses.
+---
 
-⸻
+## 🔒 **Security Best Practices**  
+- **Django Security Middleware** (HTTPS, CSRF, CORS)  
+- **Rate Limiting** (Django Ratelimit)  
+- **Database Backups** (Automated via `pg_dump`)  
+- **Monitoring** (Sentry for error tracking)  
 
-🧪 Testing
+---
 
-daphne -p 8080 backend.asgi:application
+## 📜 **License**  
+MIT License – See [LICENSE](LICENSE).  
 
+---
 
-⸻
+## 👨‍💻 **Author**  
+**Tushar Kale**  
+📧 tusharkale816@gmail.com | 🔗 GitHub: [tushar7058](https://github.com/tushar7058)  
 
-📜 License
+---
 
-This project is licensed under the MIT License – see the LICENSE file for details.
-
-⸻
-
-👨‍💻 Author
-
-Tushar Kale
-📧 Email: tusharkale816@gmail.com
-🔗 GitHub: tushar7058
-
-⸻
-
+🚀 **Ready for Production?** Deploy with confidence using this scalable, secure setup!
