@@ -1,0 +1,23 @@
+Candidate Name: Candidate
+Interview Time: 2025-08-10_14-56
+
+Q: You've used FastAPI in your internship. Can you describe a specific challenge you faced while building an API with FastAPI and how you overcame it?
+A: You've used fastop in entry level python developer role. Requiring strong python fundamentals familiarity with Frameworks like faster P class Django and SQL knowledge. Focus is on backend development API building and collaborating on scalable web. I applications with mentorship and growth opportunities.
+Feedback: The candidate's response does not answer the question. Instead of describing a challenge faced while using FastAPI, the response seems to be reciting a job description or unrelated notes. The answer lacks specifics, technical details, and a clear narrative about problem-solving. The candidate needs to directly address the prompt by providing a concrete example of a challenge, the steps taken to resolve it, and the outcome. (Score: 2.0/10)
+
+Q: Based on your resume, you've worked with both Flask and Django. Can you describe a scenario where you would choose Flask over Django, and why?
+A: Okay.
+Feedback: The candidate's response of "Okay" is wholly inadequate. It demonstrates a complete lack of preparedness and fails to address the question in any meaningful way. The candidate provides no insight into their understanding of Flask or Django, nor do they offer any reasoning behind potential framework choices. This response requires significant improvement to even be considered a baseline answer. (Score: 1.0/10)
+
+Q: You mentioned using Docker in your resume. Can you explain a scenario where using Docker significantly improved your development workflow or deployment process?
+A: Based on your resume, you've worked with both flat, you mentioned using Docker in your resume. Can you explain a scenario where using Docker significantly improve your development workflow or deployment process?
+Feedback: The candidate completely failed to answer the question. They repeated the question and a portion of the prompt, indicating a potential misunderstanding or inability to formulate a response. This suggests a lack of practical experience or understanding of Docker's benefits in development or deployment. (Score: 1.0/10)
+
+Q: You’ve built an AI-powered interview system. How did you handle potential biases in the data or the model to ensure fair and objective candidate evaluations?
+A: I don't know about this that much, but I have the knowledge about the, or the flask, and the jungle jungle, jungle interview systems. How did you handle potential biases in the data or the model to ensure, fair, and objective candidate evaluations?
+Feedback: The candidate's answer is extremely weak. They admitted a lack of knowledge regarding the core topic of the question (bias in AI systems). Furthermore, the mention of unrelated technologies like "flask" and "jungle interview systems" suggests confusion and a lack of relevant experience. The candidate did not address the question asked, indicating a significant gap in understanding or preparation for this specific area. (Score: 1.0/10)
+
+Q: You've used PostgreSQL and MySQL. Can you describe a situation where you opted for one database over the other, and what factors influenced your decision?
+A: Oh sorry. Sorry for that. I don't have that. Use child about and Miss. Can you describe a situation where you opted for 1 day over the other and what factors influenced your decision?
+Feedback: The candidate's response is incomprehensible and does not address the question at all. It appears there may be technical difficulties or the candidate is not understanding the question. There is no demonstration of experience or knowledge of database selection criteria. A complete re-evaluation of the candidate's understanding of the technologies is needed. (Score: 1.0/10)
+

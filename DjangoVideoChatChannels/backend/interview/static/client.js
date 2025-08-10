@@ -1,9 +1,14 @@
-let localStream, remoteStream, peerConnection;
+// Global variables for the WebRTC connection
+let localStream, peerConnection;
 let username = "";
-let isInitiator = false;
 let socket, transcriptionSocket, dataChannel;
-let remoteUsername = "", lastTranscript = "", interviewStarted = false;
 
+// --- NEW: Variables for improved turn-taking ---
+let transcriptBuffer = ""; // To accumulate text during a user's turn
+let inactivityTimer = null;  // To track silence from the user
+const SILENCE_THRESHOLD = 1500; // 1.5 seconds of silence indicates the end of a turn
+
+// WebRTC STUN servers
 const servers = {
   iceServers: [
     { urls: "stun:stun.l.google.com:19302" },
@@ -11,9 +16,11 @@ const servers = {
   ],
 };
 
+// DOM Elements
 const localVideo = document.getElementById("localVideo");
-const remoteVideo = document.getElementById("remoteVideo");
+const agentAvatar = document.getElementById("agentAvatar"); // Using the static avatar
 const transcriptBox = document.getElementById("transcript");
+const agentResponseBox = document.getElementById("agent-response");
 const camBtn = document.getElementById("camBtn");
 const micBtn = document.getElementById("micBtn");
 const screenBtn = document.getElementById("screenBtn");
@@ -23,104 +30,67 @@ const chatBox = document.getElementById("chatBox");
 const messages = document.getElementById("messages");
 const chatInput = document.getElementById("chatInput");
 const sendBtn = document.getElementById("sendBtn");
-const typing = document.getElementById("typing");
 const joinBtn = document.getElementById("joinBtn");
 const usernameInput = document.getElementById("usernameInput");
 const usernamePrompt = document.getElementById("usernamePrompt");
 
+const urlParams = new URLSearchParams(window.location.search);
+const meetingId = urlParams.get('meeting') || 'default_room';
+const remoteUsername = "Agent";
+
 joinBtn.onclick = async () => {
   username = usernameInput.value.trim();
-  if (!username) return alert("Please enter a name");
+  if (!username) return alert("Please enter your name");
   usernamePrompt.style.display = "none";
   document.getElementById("localName").textContent = username;
-  start();
+  await start();
 };
 
 async function start() {
   try {
     localStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
     localVideo.srcObject = localStream;
-    console.log("🟢 Local media stream started");
-
-    // 🧪 TEMP: Trigger agent manually for testing
-    if (!interviewStarted) {
-      interviewStarted = true;
-      startInterviewAutomatically();
-    }
-
   } catch (err) {
     console.error("❌ Error accessing camera/microphone:", err);
     return;
   }
 
-
-  // WebSocket connections
-  socket = new WebSocket(
-    (location.protocol === "https:" ? "wss://" : "ws://") + location.host + "/ws/signaling/"
-  );
-
-  transcriptionSocket = new WebSocket(
-    `${location.protocol === "https:" ? "wss://" : "ws://"}${location.host}/ws/transcribe/?username=${username}`
-  );
-
-  transcriptionSocket.onopen = () => console.log("🟢 Transcription WebSocket connected");
-  transcriptionSocket.onerror = (err) => console.error("❌ Transcription WebSocket error", err);
-  transcriptionSocket.onclose = () => console.warn("🔴 Transcription WebSocket closed");
-
+  const wsProtocol = location.protocol === "https:" ? "wss://" : "ws://";
+  transcriptionSocket = new WebSocket(`${wsProtocol}${location.host}/ws/transcribe/?username=${username}&meetingId=${meetingId}`);
+  transcriptionSocket.onopen = () => console.log("🟢 Transcription WebSocket connected.");
   transcriptionSocket.onmessage = handleTranscriptionMessage;
-  startTranscription(localStream);
 
+  socket = new WebSocket(`${wsProtocol}${location.host}/ws/signaling/`);
   socket.onopen = () => {
-    send({ type: "join", username });
-    console.log("🔗 Signaling WebSocket connected");
+    send({ type: "join", username, meetingId });
   };
-
   socket.onmessage = handleSignalingMessage;
+
+  startTranscription();
+  await fetchAgentResponse(""); // Kick off the interview
 }
 
 function send(msg) {
-  socket.send(JSON.stringify({ ...msg, username }));
+  socket.send(JSON.stringify({ ...msg, username, meetingId }));
 }
 
 function handleSignalingMessage({ data }) {
   const msg = JSON.parse(data);
 
-  if (msg.type === "join" && msg.username !== username) {
-    remoteUsername = msg.username;
-    isInitiator = true;
-    createPeerConnection();
-    addLocalTracks();
-    dataChannel = peerConnection.createDataChannel("chat");
-    setupDataChannel();
-    peerConnection.createOffer().then((offer) => {
-      peerConnection.setLocalDescription(offer);
-      send({ type: "offer", offer, to: remoteUsername });
-    });
-  }
-
   if (msg.type === "offer" && msg.to === username) {
-    remoteUsername = msg.username;
     createPeerConnection();
     addLocalTracks();
-    peerConnection.ondatachannel = (e) => {
-      dataChannel = e.channel;
-      setupDataChannel();
-    };
-    peerConnection.setRemoteDescription(new RTCSessionDescription(msg.offer)).then(() =>
-      peerConnection.createAnswer().then((answer) => {
+    peerConnection.ondatachannel = (e) => { dataChannel = e.channel; setupDataChannel(); };
+    peerConnection.setRemoteDescription(new RTCSessionDescription(msg.offer))
+      .then(() => peerConnection.createAnswer())
+      .then((answer) => {
         peerConnection.setLocalDescription(answer);
         send({ type: "answer", answer, to: remoteUsername });
-      })
-    );
-  }
-
-  if (msg.type === "answer" && msg.to === username) {
-    peerConnection.setRemoteDescription(new RTCSessionDescription(msg.answer));
+      });
   }
 
   if (msg.type === "candidate" && msg.to === username) {
-    const candidate = new RTCIceCandidate(msg.candidate);
-    peerConnection.addIceCandidate(candidate).catch(console.error);
+    peerConnection.addIceCandidate(new RTCIceCandidate(msg.candidate)).catch(console.error);
   }
 }
 
@@ -129,13 +99,14 @@ function createPeerConnection() {
   peerConnection.onicecandidate = ({ candidate }) => {
     if (candidate) send({ type: "candidate", candidate, to: remoteUsername });
   };
-  peerConnection.ontrack = ({ streams: [stream] }) => {
-    remoteVideo.srcObject = stream;
-    document.getElementById("remoteName").textContent = remoteUsername;
-    // ✅ Automatically start agent when remote stream is received
-    if (!interviewStarted) {
-      interviewStarted = true;
-      startInterviewAutomatically();
+
+  // --- CHANGED: Handle audio-only stream from agent ---
+  peerConnection.ontrack = ({ track, streams }) => {
+    if (track.kind === 'audio') {
+      console.log("📥 Received remote audio stream from Agent.");
+      const remoteAudio = document.createElement('audio');
+      remoteAudio.autoplay = true;
+      remoteAudio.srcObject = streams[0];
     }
   };
 }
@@ -144,146 +115,154 @@ function addLocalTracks() {
   localStream.getTracks().forEach((track) => peerConnection.addTrack(track, localStream));
 }
 
-function setupDataChannel() {
-  dataChannel.onmessage = (e) => {
-    const data = JSON.parse(e.data);
-    if (data.type === "chat") {
-      messages.innerHTML += `<div><b>${remoteUsername}:</b> ${data.message}</div>`;
-    } else if (data.type === "typing") {
-      typing.textContent = `${remoteUsername} is typing...`;
-      setTimeout(() => (typing.textContent = ""), 1000);
-    }
-  };
-}
-
-// ✅ Agent Start Trigger
-async function startInterviewAutomatically() {
-  try {
-    const response = await fetch("/agent/start/", { method: "POST" });
-    const data = await response.json();
-    console.log("🎤 Agent started:", data.question);
-    displayAgentMessage(data.question);
-  } catch (err) {
-    console.error("❌ Failed to start interview:", err);
-  }
-}
-
+// --- NEW: Handles incoming transcription with silence detection ---
 function handleTranscriptionMessage(event) {
   const data = JSON.parse(event.data);
-  if (data.type !== "transcript") return;
+  if (data.type !== "transcript" || data.sender !== username) return;
 
-  const who = data.sender === username ? username : remoteUsername || data.sender;
-  transcriptBox.innerHTML += `<div><b>${who}:</b> ${data.text}</div>`;
+  // As user speaks, clear any existing timer
+  clearTimeout(inactivityTimer);
+
+  // Append new text to our buffer
+  transcriptBuffer += data.text + " ";
+  
+  // Display live transcription to the user
+  const userTranscriptDiv = document.getElementById('user-transcript-live') || document.createElement('div');
+  userTranscriptDiv.id = 'user-transcript-live';
+  userTranscriptDiv.innerHTML = `<b>${username} (You):</b> ${transcriptBuffer}`;
+  if (!document.getElementById('user-transcript-live')) {
+    transcriptBox.appendChild(userTranscriptDiv);
+  }
   transcriptBox.scrollTop = transcriptBox.scrollHeight;
 
-  if (data.sender === username && data.text !== lastTranscript) {
-    lastTranscript = data.text;
-    fetchAgentResponse(data.text).then((response) => {
-      if (response) displayAgentMessage(response);
-    });
-  }
-}
-
-// 📤 Transcript streaming
-function startTranscription() {
-  const audioContext = new AudioContext();
-  const source = audioContext.createMediaStreamSource(localStream);
-  const processor = audioContext.createScriptProcessor(4096, 1, 1);
-  source.connect(processor);
-  processor.connect(audioContext.destination);
-
-  processor.onaudioprocess = (e) => {
-    if (transcriptionSocket.readyState === WebSocket.OPEN) {
-      const input = e.inputBuffer.getChannelData(0);
-      const buffer = convertFloat32ToInt16(input);
-      transcriptionSocket.send(buffer);
+  // Set a timer. If it fires, the user has stopped talking.
+  inactivityTimer = setTimeout(() => {
+    if (transcriptBuffer.trim().length > 0) {
+      console.log("✅ User finished speaking. Sending:", transcriptBuffer.trim());
+      // Make the live transcript permanent
+      userTranscriptDiv.id = '';
+      // Send the complete thought to the agent
+      fetchAgentResponse(transcriptBuffer.trim());
     }
-  };
+    // Clear the buffer for the next turn
+    transcriptBuffer = "";
+  }, SILENCE_THRESHOLD);
 }
 
-function convertFloat32ToInt16(buffer) {
-  const buf = new Int16Array(buffer.length);
-  for (let i = 0; i < buffer.length; i++) {
-    buf[i] = Math.min(1, buffer[i]) * 0x7fff;
-  }
-  return buf.buffer;
-}
-
-// 🤖 Ask agent for next question
+// --- NEW: Handles interview ending and conversational flow ---
 async function fetchAgentResponse(text) {
   try {
     const res = await fetch("/agent/send_answer/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ transcript: text }),
+      body: JSON.stringify({ transcript: text, meetingId, username }),
     });
 
-    // Check if the response was successful
     if (!res.ok) {
-      const errorText = await res.text(); // Read the response as text
-      console.error(`⚠️ Server responded with status ${res.status}: ${errorText}`);
-      return null; // Or throw an error
+      const errData = await res.json();
+      throw new Error(errData.error || "Server responded with an error");
     }
 
     const data = await res.json();
-    return data.question;
+
+    // Display the agent's immediate reply (feedback on previous answer)
+    if (data.reply) {
+      displayAgentMessage(data.reply);
+    }
+
+    // Check if the interview is over
+    if (data.stage === 'done') {
+      console.log("🏁 Interview has concluded.");
+      if (transcriptionSocket) {
+        transcriptionSocket.onmessage = null; // Stop listening for new transcripts
+      }
+      micBtn.disabled = true;
+      micBtn.classList.add("off");
+      return; // End the interaction
+    }
+
+    // If there is a follow-up question, ask it after a short delay
+    if (data.question) {
+      setTimeout(() => {
+        displayAgentMessage(data.question);
+      }, 1200); // Delay for more natural pacing
+    }
   } catch (err) {
-    console.error("⚠️ Failed to fetch agent question:", err);
-    return null;
+    console.error("⚠️ Failed to get agent response:", err);
+    displayAgentMessage("Sorry, I encountered an error. Please try again.");
   }
 }
 
-// 💬 Show and speak agent message
+// Displays the agent's message on the screen and speaks it
 function displayAgentMessage(msg) {
+  agentResponseBox.innerHTML = msg;
   transcriptBox.innerHTML += `<div><b>Agent:</b> ${msg}</div>`;
   transcriptBox.scrollTop = transcriptBox.scrollHeight;
   speak(msg);
 }
 
 function speak(text) {
+  speechSynthesis.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = "en-US";
+  utterance.lang = "en-IN";
   utterance.rate = 1.0;
+  
+  utterance.onstart = () => agentAvatar.classList.add("speaking");
+  utterance.onend = () => agentAvatar.classList.remove("speaking");
+  utterance.onerror = () => agentAvatar.classList.remove("speaking");
+  
   speechSynthesis.speak(utterance);
 }
 
-// 📩 Chat & Control Buttons
+function startTranscription() {
+  const audioContext = new AudioContext();
+  if (!localStream || localStream.getAudioTracks().length === 0) return;
+  const source = audioContext.createMediaStreamSource(localStream);
+  const processor = audioContext.createScriptProcessor(4096, 1, 1);
+  source.connect(processor);
+  processor.connect(audioContext.destination);
+  processor.onaudioprocess = (e) => {
+    if (transcriptionSocket && transcriptionSocket.readyState === WebSocket.OPEN) {
+      const input = e.inputBuffer.getChannelData(0);
+      const buffer = new Int16Array(input.length);
+      for (let i = 0; i < input.length; i++) buffer[i] = Math.min(1, input[i]) * 0x7FFF;
+      transcriptionSocket.send(buffer.buffer);
+    }
+  };
+}
+
+// --- UI Control Button Logic (unchanged) ---
+// (The rest of your UI button functions remain the same)
 sendBtn.onclick = () => {
   const msg = chatInput.value.trim();
-  if (!msg || !dataChannel) return;
-  messages.innerHTML += `<div><b>${username}:</b> ${msg}</div>`;
-  dataChannel.send(JSON.stringify({ type: "chat", message: msg }));
-  chatInput.value = "";
+  if (msg && dataChannel && dataChannel.readyState === 'open') {
+    messages.innerHTML += `<div><b>You:</b> ${msg}</div>`;
+    messages.scrollTop = messages.scrollHeight;
+    dataChannel.send(JSON.stringify({ type: "chat", message: msg }));
+    chatInput.value = "";
+  }
 };
-
 chatInput.oninput = () => {
-  if (dataChannel) dataChannel.send(JSON.stringify({ type: "typing" }));
+  if (dataChannel && dataChannel.readyState === 'open') dataChannel.send(JSON.stringify({ type: "typing" }));
 };
-
 camBtn.onclick = () => {
-  const videoTrack = localStream.getVideoTracks()[0];
-  videoTrack.enabled = !videoTrack.enabled;
-  camBtn.classList.toggle("off");
+  const track = localStream.getVideoTracks()[0];
+  track.enabled = !track.enabled;
+  camBtn.classList.toggle("off", !track.enabled);
 };
-
 micBtn.onclick = () => {
-  const audioTrack = localStream.getAudioTracks()[0];
-  audioTrack.enabled = !audioTrack.enabled;
-  micBtn.classList.toggle("off");
+  const track = localStream.getAudioTracks()[0];
+  track.enabled = !track.enabled;
+  micBtn.classList.toggle("off", !track.enabled);
 };
-
 screenBtn.onclick = async () => {
   const screenStream = await navigator.mediaDevices.getDisplayMedia({ video: true });
   const screenTrack = screenStream.getVideoTracks()[0];
   const sender = peerConnection.getSenders().find((s) => s.track.kind === "video");
-  sender.replaceTrack(screenTrack);
-  screenTrack.onended = () => sender.replaceTrack(localStream.getVideoTracks()[0]);
+  sender?.replaceTrack(screenTrack);
+  screenTrack.onended = () => sender?.replaceTrack(localStream.getVideoTracks()[0]);
 };
-
-chatBtn.onclick = () => {
-  chatBox.style.display = chatBox.style.display === "block" ? "none" : "block";
-};
-
+chatBtn.onclick = () => chatBox.style.display = chatBox.style.display === "block" ? "none" : "block";
 endBtn.onclick = () => {
   if (peerConnection) peerConnection.close();
   if (socket) socket.close();

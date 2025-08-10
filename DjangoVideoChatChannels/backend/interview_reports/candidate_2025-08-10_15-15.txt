@@ -1,0 +1,23 @@
+Candidate Name: Candidate
+Interview Time: 2025-08-10_15-15
+
+Q: You've used FastAPI in your internship. Can you describe a situation where you had to optimize an API endpoint built with FastAPI for performance, and what steps did you take?
+A: Let's thanks, you seeking a motivated python developer pesha to build back and logic and apis for scalable applications. Collaborating with cross functional teams, requires python fundamentals, familiarity with Frameworks like faster, py flask Django and database, SQL knowledge, offers mentorship, real world project experience, and growth opportunities. Right.
+Feedback: The candidate's response is entirely irrelevant and does not address the question. It appears to be a pre-prepared statement about their skills and desired job characteristics, rather than a direct answer about FastAPI optimization. They did not describe any situation, steps taken, or demonstrate any understanding of performance optimization in the context of FastAPI. (Score: 1.0/10)
+
+Q: Based on your resume, you’ve worked with both Flask and Django. Can you explain a key difference between them and when you might choose one over the other for a new project?
+A: The candidates respond based on your resume, you've worked with both flask and Django. Can you explain the key difference between them? And when you might choose 1 over the other for a new project. So I don't have that much knowledge about this project but I have no knowledge about the Django and the flask. So basically we are using the Django and the flask application file for the building of full fullstack web application. So we we fully application is very important for us to the building the end to end project in various Technologies like the Django flask and it Etc. So I have knowledge about the Django and the flask
+Feedback: The candidate's response is very weak. They initially admit to a lack of knowledge about Django and Flask, contradicting the implication from their resume that they have experience with them. The subsequent attempt to describe their use is vague, nonsensical, and doesn't answer the question about key differences or when to choose one over the other. The answer indicates a significant gap in understanding of these frameworks. Further probing is necessary to determine the candidate's actual skill level. (Score: 2.0/10)
+
+Q: You mentioned using Docker in your MLOps workflow. Can you explain a situation where you used Docker to solve a deployment challenge, and what benefits did it provide in that specific scenario?
+A: The candidates respond, you mentioned using Docker in your lows workflow. Can you explain a situation where you use Docker to solve a deployment Challenge? And what benefits did it provide in that specific scenario?
+Feedback: The candidate did not answer the question. They simply repeated the question back to the interviewer. This demonstrates a lack of understanding or preparedness, and provides no insight into their experience with Docker or MLOps. This constitutes a non-response and needs significant improvement. (Score: 1.0/10)
+
+Q: You've worked with both PostgreSQL and MySQL. Can you describe a scenario where you chose one database over the other and why?
+A: So, I don't know about this, so I don't have that much. I had about the jungle and the did not use work with both postgres school and miscal. Can you describe a scenario where you chose 1 day to base over the other and why?
+Feedback: The candidate's response demonstrates a clear lack of understanding and experience with the technologies mentioned in the question. The answer is largely incoherent and doesn't address the prompt at all. It indicates a lack of preparation and inability to articulate any practical experience with database selection. The candidate should focus on gaining practical experience and practicing articulating their understanding of database technologies. (Score: 1.0/10)
+
+Q: You've used LangChain in your projects. Can you describe a scenario where you used LangChain to solve a specific problem, and what were the key components or chains you utilized?
+A: The candidates respond, you use LINE chain in your projects. Can you describe a scenario where you use LINE chain to solve a specific problem? And what were the key components or change? You utilized?
+Feedback: The candidate completely misunderstood the question and essentially repeated it back, including a misspelling of 'LangChain' as 'LINE chain'. There's no demonstration of experience, problem-solving skills, or understanding of LangChain or similar technologies. The response provides no valuable information and indicates a possible lack of familiarity with the technology being inquired about. (Score: 1.0/10)
+

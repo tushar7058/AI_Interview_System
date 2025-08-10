@@ -1,0 +1,27 @@
+Candidate Name: Candidate
+Interview Time: 2025-08-10_06-32
+
+Q: Describe a time you had to learn a new software or tool quickly to complete a project. What steps did you take, and what was the outcome?
+A: Okay, I'm ready. Please. Provide the job description. You want me to summarize?
+Feedback: Feedback generated using fallback similarity method. (Score: 1.7/10)
+
+Q: Describe a time you had to learn a new software or tool quickly to complete a project. What steps did you take, and what was the outcome?
+A: Okay, you can start the interview, you will proceed further.
+Feedback: Feedback generated using fallback similarity method. (Score: 1.0/10)
+
+Q: Describe a time you had to learn a new software or tool quickly to complete a project. What steps did you take, and what was the outcome?
+A: Further describe the time you had to learn a new software or tool quickly to complete a project. What steps did you take and what was the outcome?
+Feedback: Feedback generated using fallback similarity method. (Score: 9.3/10)
+
+Q: Describe a time you had to learn a new software or tool quickly to complete a project. What steps did you take, and what was the outcome?
+A: there is no uh project I have worked with so far so you can ask
+Feedback: Feedback generated using fallback similarity method. (Score: 3.0/10)
+
+Q: Describe your experience with data visualization tools (e.g., Tableau, Power BI) and how you've used them to present data insights to stakeholders.
+A: Tell me about a time to tell me about a time you described your experience with data, visualization tools, for example, Tableau powerbi and how you use them to present Data Insights to stakeholders.
+Feedback: Feedback generated using fallback similarity method. (Score: 8.7/10)
+
+Q: Describe your experience with data visualization tools (e.g., Tableau, Power BI) and how you've used them to present data insights to stakeholders.
+A: I don't know, I don't know what is that much.
+Feedback: Feedback generated using fallback similarity method. (Score: -0.2/10)
+

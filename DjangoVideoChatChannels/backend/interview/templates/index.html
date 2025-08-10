@@ -11,18 +11,16 @@
 
 <body>
   <div class="main-layout">
-    <!-- Video Section -->
     <div class="video-section">
-      <div id="remoteVideoBox">
-        <video id="remoteVideo" autoplay playsinline></video>
-        <span id="remoteName" class="username-label"></span>
+
+      <div id="agentAvatarBox">
+        <img id = "agentAvatar" src="{% static 'ai_avatar.png' %}" alt="AI Agent Avatar"> 
+        <span id="remoteName" class="username-label">Agent</span>
       </div>
 
       <div id="localVideoBox" class="static-agent">  
-        <video id="localVideo" autoplay playsinline muted>
-          <source src="{% static 'ai_avatar.png' %}" type="image/png" />
-        </video>
-        <span id="localName" class="username-label"></span>
+        <video id="localVideo" autoplay playsinline muted poster="{% static 'ai_avatar.png' %}"></video>
+        <span id="localName" class="username-label">Agent</span>
       </div>
 
       <div class="controls">
@@ -34,7 +32,6 @@
       </div>
     </div>
 
-    <!-- Transcription Panel -->
     <div class="transcription-panel">
       <h3>Live Transcript</h3>
       <div id="transcript"></div>
@@ -43,7 +40,6 @@
     </div>
   </div>
 
-  <!-- Code Editor Section -->
   <div class="editor-section">
     <div class="editor-header">
       <h3><i class="fas fa-code"></i> Code Editor</h3>
@@ -61,7 +57,6 @@
     </div>
   </div>
 
-  <!-- Chat Section -->
   <div class="chat-popup" id="chatBox">
     <div id="messages"></div>
     <input type="text" id="chatInput" placeholder="Type your message..." />
@@ -69,7 +64,6 @@
     <div id="typing"></div>
   </div>
 
-  <!-- Username Prompt -->
   <div id="usernamePrompt" class="overlay">
     <div class="popup">
       <h3>Enter Your Name</h3>
@@ -78,7 +72,6 @@
     </div>
   </div>
 
-  <!-- JS -->
   <script src="{% static 'client.js' %}"></script>
 </body>
 </html>
