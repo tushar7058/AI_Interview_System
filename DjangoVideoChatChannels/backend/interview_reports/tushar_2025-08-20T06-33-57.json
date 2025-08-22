@@ -1,0 +1,86 @@
+{
+    "candidateName": "Tushar",
+    "interviewTimestamp": "2025-08-20T06-33-57",
+    "conversationLog": [
+        {
+            "question": "Considering your experience building AI-powered applications using FastAPI and Django,  describe a challenging technical problem you encountered during a project and how you approached solving it.",
+            "answer": "so uh I don't have no idea about the fasting, but I have the knowledge about the jungle because Building.",
+            "evaluation": {
+                "score": 1.3,
+                "feedback": "The response is incomprehensible and demonstrates a significant lack of understanding of the technologies mentioned (FastAPI and Django) and the question itself.  The candidate needs to review fundamental concepts of these frameworks and practice articulating technical challenges and solutions effectively."
+            }
+        },
+        {
+            "question": "It seems you misunderstood the terms \"FastAPI\" and \"Django.\"  Can you please clarify your experience with building AI-powered applications, perhaps describing a specific project and the technologies you actually used?",
+            "answer": "Okay. so,",
+            "evaluation": {
+                "score": 1.3,
+                "feedback": "The response is completely inadequate.  It doesn't address the question at all.  The candidate needs to provide a concrete example of an AI-powered application they built, specifying the technologies used (including clarifying the actual frameworks employed instead of the mistakenly mentioned FastAPI and Django if those were not used).  A detailed description of their role and contributions is crucial."
+            }
+        },
+        {
+            "question": "Considering your diverse experience building AI-powered applications using various Python frameworks and libraries,  describe your preferred approach to designing and structuring a RESTful API for a new backend project, and why you chose that approach.",
+            "answer": "I don't have any kind of idea about this.",
+            "evaluation": {
+                "score": 0.1,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Given your lack of experience in designing RESTful APIs, what areas of backend development are you most familiar with, and what steps would you take to learn about RESTful API design?",
+            "answer": "I don't have.",
+            "evaluation": {
+                "score": -0.2,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Considering your experience building AI-powered applications, describe a situation where you had to debug a complex issue in a Python backend application and the steps you took to resolve it.",
+            "answer": "So I don't have any kind of this as my next question.",
+            "evaluation": {
+                "score": 0.9,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "It seems you misunderstood the question. Can you describe a challenging technical problem you faced in a past project, regardless of the specific technology used?",
+            "answer": "So while the building of about entry system like you are the 1 that that I'm I'm your God. So, where I specifically, uh, face another problem. So, while building you so that",
+            "evaluation": {
+                "score": 1.3,
+                "feedback": "The response is incomprehensible and does not address the question.  The candidate needs significant improvement in communication skills and problem-solving articulation.  Practice structuring your answers clearly and concisely, focusing on the problem, your approach, and the outcome."
+            }
+        },
+        {
+            "question": "Considering your experience building AI-powered applications with FastAPI and Django,  describe a situation where you had to make a trade-off between different design choices (e.g., performance versus maintainability) and explain your reasoning.",
+            "answer": "So sorry, I don't want to answer you ask the next question.",
+            "evaluation": {
+                "score": 1.7,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Can you please explain why you're uncomfortable answering the original question regarding design trade-offs in your AI projects?",
+            "answer": "Because I don't have any kind of fight about that question so that's why I'm telling that I don't have any kind of fight about this.",
+            "evaluation": {
+                "score": 1.3,
+                "feedback": "The response is incomprehensible and does not address the question.  The candidate needs to directly explain their discomfort, perhaps citing confidentiality concerns, lack of knowledge about specific projects, or other valid reasons.  Significant improvement in communication skills is required."
+            }
+        },
+        {
+            "question": "Considering your experience building AI-powered applications, describe a situation where you had to choose between using FastAPI and Django for a backend project, and explain your reasoning behind your choice.",
+            "answer": "So I don't have an idea about this.",
+            "evaluation": {
+                "score": 3.7,
+                "feedback": "The response is perfectly clear in its communication of a lack of relevant experience.  However, it completely fails to address the question. To improve, either honestly describe a lack of relevant experience with these frameworks and detail the kinds of backend projects you *have* worked on or, if you *do* have experience, provide a detailed answer to the question."
+            }
+        },
+        {
+            "question": "Can you describe a situation where you had to choose between two different technologies for a backend project, and explain the factors you considered in making your decision?",
+            "answer": "Also, I don't have any idea about this.",
+            "evaluation": {
+                "score": 0.8,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+{
+    "candidateName": "Part.",
+    "interviewTimestamp": "2025-08-20T06-45-18",
+    "conversationLog": [
+        {
+            "question": "Considering your experience building AI-powered applications using FastAPI and other frameworks, describe a challenging technical problem you encountered during your internship and how you approached its solution.",
+            "answer": "So Frankly Speaking, I don't know about this.",
+            "evaluation": {
+                "score": 1.1,
+                "feedback": "The response is completely inadequate.  It shows a lack of preparation and professionalism.  The candidate needs to seriously reconsider how they approach interviews and practice answering behavioral and technical questions.  A more honest response acknowledging limited experience with FastAPI and outlining relevant projects or skills would be far more constructive."
+            }
+        },
+        {
+            "question": "Can you describe a challenging technical problem you encountered during your internship, regardless of the specific technologies involved?",
+            "answer": "So there were no uh, senior uh developers uh, during my internship. So there was no 1 to guide me.",
+            "evaluation": {
+                "score": 1.8,
+                "feedback": "This response is insufficient.  It fails to describe a technical problem and focuses instead on the lack of mentorship.  The candidate needs to articulate a specific challenge, the steps taken to address it, and the outcome.  Significant improvement is needed in clearly communicating technical skills and problem-solving abilities."
+            }
+        },
+        {
+            "question": "Considering your experience building AI-powered applications using various frameworks, describe a situation where you had to choose between using FastAPI, Flask, or Django for a specific project and justify your decision.",
+            "answer": "So basically it is a totally totally dependent on the project to requirement if the project is lightweight. So uh the first",
+            "evaluation": {
+                "score": 1.9,
+                "feedback": "The response is incomprehensible and fails to address the question.  It lacks any specific details, justification, or even a complete sentence. The candidate needs to significantly improve their communication skills and ability to articulate technical decisions."
+            }
+        },
+        {
+            "question": "Can you please complete your thought and describe the project, its requirements, and why you would choose one framework over the others in that specific scenario?",
+            "answer": "APS should be chosen. And if the project is heavy, then Django Django.",
+            "evaluation": {
+                "score": 1.9,
+                "feedback": "The response is incomprehensible and lacks any details about the project, its requirements, or a justification for framework selection.  It needs a complete rewrite with a clear explanation of the project, its goals, the frameworks considered (including APS and Django), and a detailed comparison explaining why the chosen framework is the best fit for the specific requirements."
+            }
+        },
+        {
+            "question": "Considering your experience building AI-powered applications with FastAPI and Django, describe a situation where you had to choose between these frameworks for a specific project and explain your reasoning.",
+            "answer": "So there was a project it is about just a system management about the employees, so that was not that much uh, a heavy application. So I chose a first API for the back end and there was the application for the banking system. Uh, that was Heavy application and which is for the security purpose. So for that, I use the Django for the back end.",
+            "evaluation": {
+                "score": 3.8,
+                "feedback": "The answer lacks detail and clarity.  The reasoning behind choosing FastAPI for one project and Django for the other is not explained.  More specific examples and justification are needed to demonstrate a strong understanding of each framework's strengths and weaknesses.  Improve verbal fluency and structure for better communication."
+            }
+        },
+        {
+            "question": "Can you elaborate on the specific factors related to security and scalability that led you to select Django for the banking application, contrasting them with the reasons you chose FastAPI for the employee management system?",
+            "answer": "So fast API doesn't provide that much Security in by default, but the Django is uh is kind of a heavy framework of the Python. So uh that gives so much security and authentication options. So for the banking, the security is the main concern and authorization is also should be provided while making the project.",
+            "evaluation": {
+                "score": 3.8,
+                "feedback": "The answer lacks detail and precision.  It mentions security as a key differentiator but doesn't elaborate on specific security features of Django or FastAPI.  The comparison is superficial and uses vague language.  Improve clarity by using precise terminology and providing concrete examples.  Expand on the scalability aspects entirely omitted here."
+            }
+        },
+        {
+            "question": "Describe a situation where you had to debug a complex issue in a Python application, detailing the steps you took to identify and resolve the problem.",
+            "answer": "So basically, it is about related to the option of handling middleware.",
+            "evaluation": {
+                "score": 1.6,
+                "feedback": "The response is completely insufficient.  It provides no details about the debugging process, the issue itself, or the solution.  The candidate needs to describe a specific situation with concrete examples and steps taken.  This answer demonstrates a lack of technical communication skills and problem-solving ability."
+            }
+        },
+        {
+            "question": "Can you please elaborate on the middleware issue you encountered, including the specific symptoms, your debugging process (e.g., logging, debugging tools, testing), and the solution you implemented?",
+            "answer": "so what I did in that situation, I gone through the logic and I",
+            "evaluation": {
+                "score": 1.6,
+                "feedback": "The response is extremely incomplete and unclear.  It lacks any detail regarding the middleware issue, debugging process, or solution.  The language used is also unprofessional and grammatically incorrect.  A complete and detailed explanation of the problem, troubleshooting steps, and resolution is required."
+            }
+        },
+        {
+            "question": "Considering your experience building AI-powered applications using various frameworks like FastAPI and Django, describe your preferred approach to designing and implementing RESTful APIs, highlighting the trade-offs you've considered in your choices.",
+            "answer": "Know.",
+            "evaluation": {
+                "score": 0.4,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Can you please elaborate on your experience designing and implementing RESTful APIs, specifically detailing your preferred approach and the trade-offs you've considered when choosing frameworks like FastAPI and Django?",
+            "answer": "Frankly Speaking, I don't know much about this. I just know the foundational knowledge about this.",
+            "evaluation": {
+                "score": 3.4,
+                "feedback": "The honesty is appreciated, but this answer lacks any relevant information.  Consider focusing on transferable skills or acknowledging the gap while outlining a plan to learn the necessary technologies for future roles.  This response suggests a lack of experience in the crucial area specified in the question."
+            }
+        }
+    ]
+}

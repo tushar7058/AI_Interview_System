@@ -1,0 +1,86 @@
+{
+    "candidateName": "Dasha",
+    "interviewTimestamp": "2025-08-21T06-32-54",
+    "conversationLog": [
+        {
+            "question": "Describe your experience using React Hooks, specifically `useState` and `useEffect`, within the context of your \"Keeper App\" project.",
+            "answer": "Okay.",
+            "evaluation": {
+                "score": 0,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Can you please describe your experience with React Hooks, specifically `useState` and `useEffect`, in your \"Keeper App\" project?  If you haven't worked on a project called \"Keeper App,\" please describe a project where you used these hooks.",
+            "answer": "I don't know.",
+            "evaluation": {
+                "score": 0,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Can you describe a challenging problem you encountered while developing your Keeper App, and explain how you approached solving it using your React.js skills?",
+            "answer": "I don't have any kind of fight about this, uh, so, but I have the knowledge, a little knowledge about the reactive part.",
+            "evaluation": {
+                "score": 1.3,
+                "feedback": "The response is completely inadequate.  It shows a lack of understanding of the question and a significant inability to articulate technical experience.  The candidate needs to review and practice answering behavioral interview questions, focusing on showcasing relevant skills and experience.  Specific examples are crucial."
+            }
+        },
+        {
+            "question": "Can you describe a specific challenge you faced while working with React.js in any project, even if it wasn't the Keeper App, and how you addressed it?",
+            "answer": "Yes.",
+            "evaluation": {
+                "score": 0,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Considering your experience building the Keeper App,  describe a scenario where you had to manage component state effectively using React Hooks, and how you approached the problem.",
+            "answer": "So I don't have that much knowledge about this.",
+            "evaluation": {
+                "score": 3.7,
+                "feedback": "The answer is honest and clear, but lacks any substance related to the question.  Focus on highlighting relevant experience, even if it means addressing the lack of direct experience with React Hooks in the context of the Keeper App specifically, and discussing a similar scenario or a relevant concept you *do* understand."
+            }
+        },
+        {
+            "question": "Can you describe a situation where you managed application state in a React application, regardless of the specific method used (hooks or otherwise)?",
+            "answer": "Okay.",
+            "evaluation": {
+                "score": -0.7,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Describe a specific challenge you faced while developing the state management in your \"Keeper App\" and how you overcame it using React Hooks.",
+            "answer": "So basically, whenever I build multiple application, I work on several projects. Like the describing specific challenges while working on reactjs and specification considering or experience building the keeper and discover scenario where you had a management component using that and how you approach the product.",
+            "evaluation": {
+                "score": 1.8,
+                "feedback": "The answer is largely incomprehensible and fails to address the question.  It lacks specific details about the Keeper App, the state management challenge, and the solution using React Hooks. The candidate needs to significantly improve their ability to articulate technical challenges and solutions clearly and concisely."
+            }
+        },
+        {
+            "question": "Your answer doesn't describe a specific challenge in the Keeper app's state management or how you overcame it using React Hooks. Can you please describe a concrete problem you encountered and the solution you implemented using React Hooks within the context of the Keeper App's state management?",
+            "answer": "Okay, so ask me another question. Please send me the Google version.",
+            "evaluation": {
+                "score": 0.3,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Considering your experience building the Keeper App, can you describe a scenario where you had to manage component state effectively using React Hooks, and what alternative approaches you considered?",
+            "answer": "So basically, I don't have that much. I don't know about this. So How can I help?",
+            "evaluation": {
+                "score": 1.1,
+                "feedback": "The response demonstrates a significant lack of understanding of the question and the relevant technical skills.  The candidate needs to review React Hooks and state management techniques before attempting to answer similar questions.  Consider focusing on practical experience and specific examples in future interview preparations."
+            }
+        },
+        {
+            "question": "Can you describe your experience with React, and any projects where you managed application state, even if not specifically using hooks?",
+            "answer": "Okay.",
+            "evaluation": {
+                "score": -0.5,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        }
+    ]
+}

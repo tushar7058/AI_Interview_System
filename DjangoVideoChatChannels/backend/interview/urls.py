@@ -1,11 +1,13 @@
+# interview/urls.py
+
 from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.index, name='index'),                     # Frontend UI
-    path('transcribe/', views.transcribe, name='transcribe'),  # Client-side STT
+    # Serves the main HTML page for the interview interface
+    path('', views.index, name='index'),
 
-    # Agent-driven endpoints
-    path('start_interview/', views.start_interview, name='start_interview'),
-    path('send_answer/', views.send_answer, name='send_answer'),
+    # A single, unified endpoint to handle every turn of the conversation.
+    # This replaces the separate start_interview and send_answer endpoints.
+    path('turn/', views.handle_interview_turn, name='handle_interview_turn'),
 ]

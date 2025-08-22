@@ -1,0 +1,86 @@
+{
+    "candidateName": "John Doe.",
+    "interviewTimestamp": "2025-08-18T11-40-24",
+    "conversationLog": [
+        {
+            "question": "You've built and deployed AI-powered systems using Python, FastAPI, and Django. Describe a challenging performance or scalability issue you encountered with the backend APIs of such a system, and how you addressed it.",
+            "answer": "So, I have worked on my system using fast API python Etc, I have facing uh integration data channels throughout the painting and the things integration. So with the help of chart GPD I resolve that problem.",
+            "evaluation": {
+                "score": 1.3,
+                "feedback": "The answer is very unclear and lacks specific details about the challenge and its resolution. Please provide a clear description of the problem, the specific steps taken to address it, and avoid vague or unclear phrasing."
+            }
+        },
+        {
+            "question": "Could you please clarify what 'integration data channels throughout the painting and the things integration' refers to and how that specifically manifested as a performance or scalability issue?",
+            "answer": "You don't know.",
+            "evaluation": {
+                "score": 1.4,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "When developing a new backend service that needs to be robust and maintainable in production, what key considerations do you prioritize beyond just writing functional code?",
+            "answer": "Don't have the answer.",
+            "evaluation": {
+                "score": 3,
+                "feedback": "The candidate was very clear and honest about not knowing the answer, which is good communication. However, it indicates a complete lack of knowledge for this specific technical area."
+            }
+        },
+        {
+            "question": "Could you tell me more about why you don't have the answer?",
+            "answer": "I don't have answer, I don't have answer.",
+            "evaluation": {
+                "score": 1.2,
+                "feedback": "The response was highly repetitive and failed to address the 'why' in the question, offering no explanation or detail."
+            }
+        },
+        {
+            "question": "How do you ensure the Python backend code you write is not just functional, but also reusable and easy to test?",
+            "answer": "I don't have any kind of answer about this.",
+            "evaluation": {
+                "score": 3.6,
+                "feedback": "The candidate clearly communicated their inability to answer, but this response indicates a critical knowledge gap for a backend developer role."
+            }
+        },
+        {
+            "question": "What principles or considerations do you typically keep in mind to ensure your Python backend code is effective for the long term?",
+            "answer": "I don't know.",
+            "evaluation": {
+                "score": 3.3,
+                "feedback": "The answer is clear and concise in admitting a lack of knowledge. However, it provides no substance, indicating a critical gap in understanding the question's core topic."
+            }
+        },
+        {
+            "question": "The role requires collaboration with frontend developers. Could you describe how you would typically work with a frontend team to ensure smooth API integration and a cohesive user experience?",
+            "answer": "I don't.",
+            "evaluation": {
+                "score": 2.8,
+                "feedback": "Extremely clear but completely fails to address the question's intent, indicating a critical mismatch or lack of engagement."
+            }
+        },
+        {
+            "question": "Could you clarify what you mean by 'I don't'?",
+            "answer": "Have any kind of answer for you to give you.",
+            "evaluation": {
+                "score": 2.4,
+                "feedback": "The answer fails to clarify the initial statement, merely restating the lack of an answer without providing any context or new information. The phrasing is also awkward."
+            }
+        },
+        {
+            "question": "Your experience includes deploying scalable models on GCP and using tools like Docker and Jenkins for MLOps. How do you approach designing a Python backend service from the outset to ensure it's easily deployable and manageable in a production cloud environment?",
+            "answer": "Say.",
+            "evaluation": {
+                "score": -0.5,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Can you describe your approach to designing for deployability and manageability?",
+            "answer": "I don't. I don't have any kind of question about this.",
+            "evaluation": {
+                "score": 1.2,
+                "feedback": "The candidate's response completely avoids the question, indicating a lack of relevant experience or understanding. Communication is unhelpful and dismissive."
+            }
+        }
+    ]
+}

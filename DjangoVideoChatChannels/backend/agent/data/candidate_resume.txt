@@ -1,0 +1,68 @@
+Vaishnavi Gude 
+            8421462161   vaishnavigude1714@gmail.com   https://www.linkedin.com/in/vaishnavi-gude-45802325a/ 
+ 
+
+About Me 
+Final-year B.Tech Computer Science student with a 9.43 CGPA and hands-on experience in full-stack 
+development, NLP, and Generative AI. Proficient in Python, Flask, and LangChain, with a passion for building 
+innovative AI solutions to real-world challenges using GCP. 
+
+Technical Skills 
+
+• Languages: Python, SQL, JavaScript, HTML, CSS 
+• Frameworks & Libraries: Flask, LangChain, Bootstrap, OpenCV 
+• AI/ML & Tools: LLM, NLP, Machine Learning, Deep Learning, Power BI 
+• Databases: MySQL, SQLite, MongoDB, Vector DB 
+• Tools & Platforms: Git, GitHub, GCP 
+
+Projects 
+Facial Recognition Attendance System 
+     Python, React.js, HTML, CSS, Bootstrap, MySQL 
+
+• Built a system that uses face recognition to automate student attendance, significantly reducing 
+manual attendance time.  
+
+• Integrated webcam image capture, real-time face detection, and database logging.  
+
+Innovating Rural Education for Sustainable Development 
+      Python, React.js, HTML, CSS, Bootstrap, MySQL 
+
+• Designed a platform to enhance learning opportunities in underserved rural areas using digital 
+tools and sustainable methods. 
+
+• Focused on accessibility, engagement, and scalability for education in remote regions  
+
+Chatbot For Direct Job Application 
+       Python, Natural Language Processing, GCP , RapidFuzz  
+
+• Trained a Chatbot to ask questions based on Job descriptions and calculate the accuracy. 
+
+• Implemented using GCP API keys and NLP for extraction RapidFuzz for calculating the accuracy 
+
+Experience 
+ MGS TECHNOLOGY PVT LTD, Pune| Data Science Intern – HireUp Product                               June 2025 – present 
+       Built and deployed an AI-powered interview system using Python, FastAPI, and OpenAI APIs, reducing 
+       manual evaluation by 70%. 
+       Developed an interactive AI agent to conduct interviews, generate questions,  and analyze candidate         
+       responses in real-time. 
+ 
+ QSPIDERS, Pune | Data Analyst Intern                                                                                              Jan 2025 – July 2025 
+       Learning data analysis techniques using Excel, SQL, and Power BI.  
+       Practicing data visualization, reporting, and cleaning techniques on real-world datasets. 
+ 
+
+     Education                                                                                                                                                    
+MIT College Of Railway Engineering and Research Barshi, Maharashtra 
+Bachelor of Technology in Computer Science and engineering; CGPA: 9.43 Nov 2022 – May 2025 
+
+Government Residential Women’s Polytechnic                                                                   Latur, Maharashtra 
+Diploma in Computer Engineering – 80.46% Aug 2019 – July 2022 
+ 
+
+    Roles And Achievements 
+
+• SPACE Committee Member Contributed to technical and organizational events. 
+• Certified in Software Testing – Besant Technologies 
+• Completed Artificial Intelligence A–Z – Udemy 
+• Participated in National Level hackathon 
+• Selected for Data Science Course by IIT Guwahati

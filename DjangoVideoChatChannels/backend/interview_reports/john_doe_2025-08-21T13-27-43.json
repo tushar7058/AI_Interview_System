@@ -1,0 +1,86 @@
+{
+    "candidateName": "John Doe",
+    "interviewTimestamp": "2025-08-21T13-27-43",
+    "conversationLog": [
+        {
+            "question": "Describe your experience using React Hooks (useState, useEffect, etc.) in your projects, focusing on a specific example where you overcame a challenge.",
+            "answer": "So I don't have that much experience in the react related field. I have experience in the python development only.",
+            "evaluation": {
+                "score": 3.5,
+                "feedback": "The answer is clear and honestly communicated, but completely lacks relevance to the question.  It indicates a significant skills gap for this role requiring React Hooks expertise. Consider focusing your job search on roles leveraging your Python skills."
+            }
+        },
+        {
+            "question": "Given your limited experience with React, can you describe a situation where you had to learn a new technology quickly and how you approached that learning process?",
+            "answer": "Second.",
+            "evaluation": {
+                "score": 0.3,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Considering your experience building the Facial Recognition Attendance System and the AI-powered interview system, describe a challenging situation you encountered while integrating a React frontend with a backend system, and how you solved it.",
+            "answer": "so uh, I used, uh, for the back end of python and specially for the front end development, I use react",
+            "evaluation": {
+                "score": 1.8,
+                "feedback": "The response is extremely vague and lacks any description of a challenging situation or its solution.  It fails to address the question's requirements.  The candidate needs to significantly improve their communication skills and provide concrete examples to demonstrate their technical abilities."
+            }
+        },
+        {
+            "question": "Can you describe a specific challenge you faced during the integration of your React frontend and Python backend, for either the facial recognition or AI interview system, and how you overcame it?",
+            "answer": "So while the integration, I faced a lot of problems. Uh, mainly for the AI integration related problems, with the gcp development, I solved it using chat GPT",
+            "evaluation": {
+                "score": 2.8,
+                "feedback": "The response is extremely vague and lacks detail.  It doesn't describe a specific challenge, nor does it explain the solution in any meaningful way. Using ChatGPT as a solution without explaining the problem or the specific steps taken is insufficient.  The answer needs significant improvement in clarity, structure, and technical depth to demonstrate relevant experience."
+            }
+        },
+        {
+            "question": "Describe your experience building React components for your Facial Recognition Attendance System, focusing on a specific component and the challenges you faced during its development.",
+            "answer": "so I don't have that much experience in the react development as such",
+            "evaluation": {
+                "score": 3.1,
+                "feedback": "The candidate's response directly admits a lack of relevant experience. While the communication is clear, the answer is completely irrelevant and lacks depth and completeness regarding the question.  Focus on transferable skills or projects that demonstrate relevant abilities if you lack direct experience in React for facial recognition systems. Consider alternative projects, or be prepared to explain honestly why your experience is limited in this area."
+            }
+        },
+        {
+            "question": "Can you describe your experience with front-end development in general, and any projects where you overcame significant challenges?",
+            "answer": "So I don't have that much knowledge about this.",
+            "evaluation": {
+                "score": 3.2,
+                "feedback": "The answer lacks any relevant information regarding front-end development experience or project challenges.  While the clarity of the statement itself is high, the response is completely insufficient and doesn't demonstrate any relevant skills. Consider preparing specific examples of projects and highlighting the technologies and challenges you faced."
+            }
+        },
+        {
+            "question": "Describe a specific challenge you faced while building the React.js frontend for your Facial Recognition Attendance System, and explain how you approached solving it.",
+            "answer": "Sorry, I don't have that much knowledge about the application recognition system.",
+            "evaluation": {
+                "score": 3.7,
+                "feedback": "The response is clear and polite, but completely lacks relevance to the question.  The candidate needs to demonstrate technical proficiency in React.js and problem-solving skills.  Consider reviewing and preparing technical examples before interviews."
+            }
+        },
+        {
+            "question": "Can you describe a challenging project you *did* work on using React.js, and explain the challenges you faced and how you overcame them?",
+            "answer": "Scoring.",
+            "evaluation": {
+                "score": 0.1,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Describe a specific challenge you encountered while developing the React.js frontend for your Facial Recognition Attendance System, and how you solved it.",
+            "answer": "So, I don't know about this.",
+            "evaluation": {
+                "score": 0.8,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Can you describe your experience working with React.js in other projects, even if not related to facial recognition?",
+            "answer": "So asked me next question.",
+            "evaluation": {
+                "score": 0.0,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        }
+    ]
+}

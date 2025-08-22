@@ -16,10 +16,11 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path,include
+from django.urls import path, include
 
 urlpatterns = [
+    # This line now makes the 'interview' app the site's homepage
     path('', include('interview.urls')),
     path('admin/', admin.site.urls),
-    path('agent/', include('agent.urls')),
+    path('api/agent/', include('agent.urls')),
 ]

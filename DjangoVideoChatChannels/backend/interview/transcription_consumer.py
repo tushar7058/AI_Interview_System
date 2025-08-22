@@ -8,7 +8,6 @@ from channels.generic.websocket import AsyncWebsocketConsumer
 from channels.layers import get_channel_layer
 from google.cloud import speech_v1p1beta1 as speech
 from google.oauth2 import service_account
-from asgiref.sync import async_to_sync
 
 
 

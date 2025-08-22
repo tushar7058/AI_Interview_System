@@ -1,56 +1,64 @@
+# interview/views.py
+
+import json
 from django.shortcuts import render
+from django.views.decorators.http import require_POST
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
-from agent.agent import CustomAutoGenInterviewSystem  # <- Imported from agent app
-import json
+from agent.agent import AgenticInterviewSystem, read_file
 
-# Simple global session (can be extended per user)
-interview_session = None
+# --- Agent Initialization ---
+# The agent is instantiated once at startup and is completely stateless.
+agent_system = AgenticInterviewSystem()
 
 def index(request):
+    """Renders the main interview page."""
     return render(request, 'index.html')
 
 @csrf_exempt
-def transcribe(request):
-    if request.method == 'POST':
-        return JsonResponse({"status": "received"})
-    return JsonResponse({"error": "Invalid request"}, status=400)
-
-@csrf_exempt
-def start_interview(request):
+@require_POST
+def handle_interview_turn(request):
     """
-    Initializes interview session and returns first question.
+    Handles a single, stateless turn of the interview.
+
+    This view receives the entire current interview state from the client,
+    invokes the agent to process the user's input, and returns the
+    complete, updated state back to the client.
     """
-    global interview_session
-
-    if request.method == 'POST':
-        interview_session = CustomAutoGenInterviewSystem()
-        return JsonResponse({
-            "reply": "Please introduce yourself.",
-            "question": "Tell us about yourself.",
-            "stage": "greeting"
-        })
-
-    return JsonResponse({"error": "Invalid method. Use POST."}, status=405)
-
-@csrf_exempt
-def send_answer(request):
-    """
-    Processes user's answer and returns AI agent's next question.
-    """
-    global interview_session
-
-    if request.method != 'POST':
-        return JsonResponse({"error": "Invalid method. Use POST."}, status=405)
-
-    if not interview_session:
-        return JsonResponse({"error": "Interview not started."}, status=400)
-
     try:
         data = json.loads(request.body)
-        answer = data.get("answer", "").strip()
-        response = interview_session.get_next(answer)
-        return JsonResponse(response)
+        state = data.get('state')
+        user_input = data.get('userInput', '')
 
+        # --- State Management ---
+        if state is None:
+            # First turn: Initialize the state for a new interview.
+            # In a real app, you might get these filenames from the request.
+            print("INFO: Initializing new interview state.")
+            current_state = {
+                "job_description": read_file("software_engineer_jd.txt"),
+                "resume": read_file("candidate_resume.txt"),
+                "num_questions_total": 5,
+                "user_input": user_input,
+            }
+        else:
+            # Subsequent turns: Use the state provided by the client.
+            current_state = state
+            current_state['user_input'] = user_input
+
+        # --- Invoke Agent Logic ---
+        # The view correctly calls the agent's 'invoke' method with the full state.
+        new_state = agent_system.invoke(current_state)
+
+        return JsonResponse(new_state)
+
+    except json.JSONDecodeError:
+        return JsonResponse({'error': 'Invalid JSON in request body.'}, status=400)
+    except FileNotFoundError as e:
+        return JsonResponse({
+            'error': f'A required data file was not found: {e.filename}. Please ensure it is in the agent/data/ directory.'
+        }, status=404)
     except Exception as e:
-        return JsonResponse({"error": str(e)}, status=500)
+        # Log the full error for easier debugging on the server.
+        print(f"ERROR in handle_interview_turn: {type(e).__name__}: {e}")
+        return JsonResponse({'error': 'An internal server error occurred.'}, status=500)
