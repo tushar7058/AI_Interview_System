@@ -11,7 +11,7 @@ Technical Skills
 
 • Languages: Python, SQL, JavaScript, HTML, CSS 
 • Frameworks & Libraries: Flask, LangChain, Bootstrap, OpenCV 
-• AI/ML & Tools: LLM, NLP, Machine Learning, Deep Learning, Power BI 
+• AI/ML & Tools: LL BI M, NLP, Machine Learning, Deep Learning, Power
 • Databases: MySQL, SQLite, MongoDB, Vector DB 
 • Tools & Platforms: Git, GitHub, GCP 
 

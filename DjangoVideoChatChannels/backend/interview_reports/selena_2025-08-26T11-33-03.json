@@ -1,0 +1,86 @@
+{
+    "candidateName": "Selena",
+    "interviewTimestamp": "2025-08-26T11-33-03",
+    "conversationLog": [
+        {
+            "question": "Can you describe your experience using React Hooks (useState, useEffect, etc.) in your React.js projects, providing specific examples from your portfolio?",
+            "answer": "I used react hooks like you said and use a bag for giving effects and various State Management. In my project, I have lots of experience using reactors",
+            "evaluation": {
+                "score": 2.4,
+                "feedback": "The answer lacks clarity, detail, and specific examples.  It's difficult to understand the candidate's experience with React Hooks.  The response needs substantial improvement;  mention specific projects and concrete examples of how you used useState, useEffect, and other hooks to solve problems.  Avoid vague terms like 'a bag for giving effects'."
+            }
+        },
+        {
+            "question": "Can you please provide a specific example from your portfolio illustrating how you used React Hooks, such as `useState` or `useEffect`, to manage state or side effects, and explain the problem you solved with it?",
+            "answer": "yes, I can explain my example, from my portfolio listing, how I react to, and I use it and use affect to manage side effects and manage, and I will explain you",
+            "evaluation": {
+                "score": 1.9,
+                "feedback": "The answer is incomprehensible and fails to address the question.  It lacks any specific example, code, or explanation of a problem solved. The candidate needs to drastically improve their communication skills and provide concrete examples to demonstrate their technical abilities."
+            }
+        },
+        {
+            "question": "Describe a challenging problem you encountered while developing the facial recognition attendance system using React.js, and explain how you overcame it.",
+            "answer": "I have encountered when facial problem in my project using Reactive.",
+            "evaluation": {
+                "score": 1.8,
+                "feedback": "The response is incomprehensible and lacks any detail.  It fails to describe a problem, the solution, or even correctly name the framework (React.js, not 'Reactive').  A complete rewrite is needed, focusing on a specific technical challenge and its resolution."
+            }
+        },
+        {
+            "question": "Can you please elaborate on the \"facial problem\" you encountered, specifying the nature of the challenge and the steps you took to address it within the React.js framework?",
+            "answer": "For capturing or for recognizing the faces of the person who, uh, in the in front of the camera.",
+            "evaluation": {
+                "score": 1.8,
+                "feedback": "The response is extremely vague and lacks any technical detail.  It fails to describe the 'facial problem' or any attempted solutions within the React.js framework.  The candidate needs to articulate the challenge clearly and explain their approach, including specific technologies and methods used."
+            }
+        },
+        {
+            "question": "Considering your experience building the facial recognition attendance system using React.js,  describe your approach to designing and implementing reusable React components for that project.",
+            "answer": "Uh, I build a system but I don't have experience.",
+            "evaluation": {
+                "score": 1.1,
+                "feedback": "The response is completely inadequate and demonstrates a significant lack of honesty and preparedness.  The candidate needs to be upfront about their experience (or lack thereof) and avoid misrepresenting their skills.  This answer raises serious concerns about their suitability for the role."
+            }
+        },
+        {
+            "question": "Given that your resume lists experience building a facial recognition attendance system using React.js, could you clarify your previous statement regarding your lack of experience in that area?",
+            "answer": "Because I didn't develop the system, I copied it from GitHub and integrated using sgpt.",
+            "evaluation": {
+                "score": 5.9,
+                "feedback": "The answer is clear in stating what was done, but lacks depth and honesty.  The candidate needs to clarify what their contributions actually were.  Copying a system and integrating it with a large language model (presumably ChatGPT) does not constitute 'building' a system.  This response raises serious concerns about the candidate's integrity and understanding of software engineering practices.  More detailed explanation of their role and contributions is crucial."
+            }
+        },
+        {
+            "question": "Describe your experience using React.js in your projects, focusing on how you approached building and integrating reusable components.",
+            "answer": "I didn't develop any system using.",
+            "evaluation": {
+                "score": 3.7,
+                "feedback": "The answer is clear but completely lacks relevance to the question.  It indicates a significant gap in the candidate's claimed skills.  To be considered, please provide specific examples of React projects and explain your approach to reusable component creation, including technologies and patterns used (e.g., functional components, hooks, state management solutions)."
+            }
+        },
+        {
+            "question": "Can you describe your experience with React.js, even if it wasn't in a full system development context?  Perhaps you used it in smaller projects, learning exercises, or prototypes?",
+            "answer": "I didn't develop any project.",
+            "evaluation": {
+                "score": 6.3,
+                "feedback": "The answer is clear and concise, but lacks substance.  It's honest, but to be a competitive candidate, describe any exposure to React, even if it's just tutorials or very small projects.  Mentioning specific components, hooks, or concepts you've worked with would significantly improve your response."
+            }
+        },
+        {
+            "question": "Describe your experience building the facial recognition attendance system, focusing on the challenges you faced integrating the React.js frontend with the Python backend.",
+            "answer": "I faced various problems while integrating the front end with the back end because back end is fully, uh, based on Python and reactors in. I usually just where I use system, JavaScript for everything, the front end, but for integration, I use API.",
+            "evaluation": {
+                "score": 2.8,
+                "feedback": "The answer lacks detail and technical precision.  It doesn't describe specific challenges encountered during integration (e.g., data format issues, API design choices, authentication methods, error handling).  The description is vague and uses unclear terminology ('reactors in').  The candidate needs to articulate their experience with concrete examples and technical details to demonstrate their skills and problem-solving abilities."
+            }
+        },
+        {
+            "question": "Can you elaborate on the specific API design choices and the challenges you encountered during the integration process, highlighting the discrepancies between your typical JavaScript-centric approach and the Python backend?",
+            "answer": "Next question.",
+            "evaluation": {
+                "score": 0.2,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        }
+    ]
+}
