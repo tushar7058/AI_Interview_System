@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>1-to-1 Interview Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{% static 'styles.css' %}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <div class="main-layout">
+    <div class="video-section">
+
+      <div id="agentAvatarBox">
+        <img id = "agentAvatar" src="{% static 'ai_avatar.png' %}" alt="AI Agent Avatar"> 
+        <span id="remoteName" class="username-label">Agent</span>
+      </div>
+
+      <div id="localVideoBox" class="static-agent">  
+        <video id="localVideo" autoplay playsinline muted poster="{% static 'ai_avatar.png' %}"></video>
+        <span id="localName" class="username-label">Agent</span>
+      </div>
+
+      <div class="controls">
+        <button id="camBtn" title="Toggle Camera"><i class="fas fa-video"></i></button>
+        <button id="micBtn" title="Toggle Microphone"><i class="fas fa-microphone"></i></button>
+        <button id="screenBtn" title="Share Screen"><i class="fas fa-desktop"></i></button>
+        <button id="chatBtn" title="Open Chat"><i class="fas fa-comments"></i></button>
+        <button id="endBtn" title="End Call"><i class="fas fa-phone-slash"></i></button>
+      </div>
+    </div>
+
+    <div class="transcription-panel">
+      <h3>Live Transcript</h3>
+      <div id="transcript"></div>
+      <h4>Agent Response</h4>
+      <div id="agent-response" class="agent-response-box">Waiting for input...</div>
+    </div>
+  </div>
+
+  <div class="editor-section">
+    <div class="editor-header">
+      <h3><i class="fas fa-code"></i> Code Editor</h3>
+      <div id="codeEditor" contenteditable="true"></div>
+      <select id="langSelect">
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="cpp">C++</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+      </select>
+      <textarea id="codeArea" placeholder="// Start coding here..."></textarea>
+      <button id="submitCode">Submit</button>
+    </div>
+  </div>
+
+  <div class="chat-popup" id="chatBox">
+    <div id="messages"></div>
+    <input type="text" id="chatInput" placeholder="Type your message..." />
+    <button id="sendBtn"><i class="fas fa-paper-plane"></i></button>
+    <div id="typing"></div>
+  </div>
+
+  <div id="usernamePrompt" class="overlay">
+    <div class="popup">
+      <h3>Enter Your Name</h3>
+      <input type="text" id="usernameInput" placeholder="Your name" />
+      <button id="joinBtn">Join</button>
+    </div>
+  </div>
+
+  <script src="{% static 'client.js' %}"></script>
+</body>
+</html>

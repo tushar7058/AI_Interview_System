@@ -1,0 +1,82 @@
+Job Description: React Developer (Fresher)
+Location: pune / Remote
+Experience: 0-1 Years
+Job Type: Full-Time
+
+About Us
+MGS Technology pvt ltd is a  innovative tech startup focused on building cutting-edge SaaS solutions, creating beautiful user experiences for global clients . We believe in nurturing new talent and providing a foundation for recent graduates to build a successful career in front-end development.
+
+Join our passionate team and transform your academic knowledge into real-world impact by working on exciting projects that challenge and enhance your skills.
+
+Role Overview
+We are looking for a highly motivated and enthusiastic React.js Developer (Fresher) to join our dynamic engineering team. In this role, you will be responsible for assisting in the development and maintenance of user interface components for our web applications. This is a fantastic opportunity to learn from seasoned developers, contribute to live projects, and grow into a proficient front-end engineer.
+
+Key Responsibilities
+Develop: Assist in building reusable, efficient, and scalable React components and features for our web applications.
+
+Learn & Implement: Translate UI/UX design wireframes into high-quality, responsive code.
+
+Collaborate: Work closely with senior developers, designers, and product managers to understand requirements and deliver on project goals.
+
+Debug & Troubleshoot: Identify and fix bugs, performance bottlenecks, and other issues in existing applications.
+
+Code Quality: Write clean, well-documented, and testable code following best practices and team guidelines.
+
+Version Control: Use Git for version control, following team workflows for branching and merging.
+
+Stay Curious: Actively learn and stay updated with the latest trends and best practices in React and front-end development.
+
+Qualifications & Skills (What We're Looking For)
+Must-Have (The Non-Negotiables):
+
+A degree in Computer Science, Information Technology, or a related field (or equivalent practical experience through bootcamps/projects).
+
+Strong foundational knowledge of core web technologies:
+
+HTML5 & CSS3
+
+JavaScript (ES6+) fundamentals (e.g., promises, async/await, destructuring, modules).
+
+Hands-on experience with React through academic projects, personal projects, or internships. You should understand:
+
+React fundamentals (JSX, Components, State, Props).
+
+React Hooks (useState, useEffect, etc.).
+
+Component Lifecycle methods.
+
+Familiarity with RESTful APIs and how to integrate them into a React application.
+
+Basic understanding of Git and GitHub/GitLab.
+
+A strong problem-solving attitude and a keen desire to learn and grow.
+
+Excellent communication and teamwork skills.
+
+Good-to-Have (Bonus Points):
+
+Familiarity with a CSS preprocessor like SASS or LESS.
+
+Exposure to a React state management library (Context API, Redux, Zustand).
+
+Basic knowledge of TypeScript.
+
+Understanding of modern front-end build tools and pipelines (Webpack, Vite, Babel, NPM).
+
+Awareness of testing frameworks (Jest, React Testing Library).
+
+Knowledge of responsive web design principles.
+
+What We Offer
+Mentorship: A structured mentorship program with experienced developers to guide your career growth.
+
+Learning & Development: Budget for courses, certifications, and conferences. Dedicated time for skill enhancement.
+
+Real Impact: Your code will be deployed to production. You’re not just here to watch; you’re here to contribute.
+
+Collaborative Culture: A supportive, inclusive, and fun work environment where your ideas are valued.
+
+Competitive Compensation: A attractive salary and benefits package for freshers.
+
+Career Path: A clear trajectory for advancement to roles like React Developer, Front-End Engineer, or UI Engineer.
+

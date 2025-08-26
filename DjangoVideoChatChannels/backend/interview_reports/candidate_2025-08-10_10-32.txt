@@ -1,0 +1,23 @@
+Candidate Name: Candidate
+Interview Time: 2025-08-10_10-32
+
+Q: Considering your experience with [mention a specific technology/skill from resume], describe a situation where you had to troubleshoot a complex issue using that technology. What steps did you take to diagnose the problem, and what was the final resolution?
+A: Okay, to give you the best 2 lines, considering your experience. With mention a specific technology skill from resume, describe a situation where you had to troubleshoot a complex issue using that technology. What steps did you take to diagnose the problem? And what was the final resolution?
+Feedback: Feedback generated using fallback similarity method. (Score: 8.6/10)
+
+Q: Considering your experience with [mention a specific technology/skill from resume], describe a situation where you had to troubleshoot a complex issue using that technology. What steps did you take to diagnose the problem, and what was the final resolution?
+A: I don't know.
+Feedback: Feedback generated using fallback similarity method. (Score: -0.5/10)
+
+Q: Walk me through your experience with monitoring and alerting tools. Which ones have you used, and how have you leveraged them to proactively identify and resolve system issues?
+A: Tell me about a time. You had to make a decision without all the information. Walk me through your experience with monitoring and alerting tools, which ones have you used, and how have you leveraged them to proactively identify and resolve system issues?
+Feedback: Feedback generated using fallback similarity method. (Score: 7.9/10)
+
+Q: Walk me through your experience with monitoring and alerting tools. Which ones have you used, and how have you leveraged them to proactively identify and resolve system issues?
+A: I don't know.
+Feedback: Feedback generated using fallback similarity method. (Score: 0.5/10)
+
+Q: How do you stay up-to-date with the latest DevOps trends and technologies? Can you give me an example of something you've recently learned and how you applied it?
+A: Describe a time. You had to automate a manual process. How do you stay up to date with the latest devops trends and Technologies? Can you give me an example of something you've recently learned and how you applied it?
+Feedback: Feedback generated using fallback similarity method. (Score: 8.0/10)
+

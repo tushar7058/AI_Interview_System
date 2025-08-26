@@ -1,0 +1,86 @@
+{
+    "candidateName": "Tushar K.",
+    "interviewTimestamp": "2025-08-19T17-10-42",
+    "conversationLog": [
+        {
+            "question": "Considering your experience building AI-powered applications using FastAPI and other frameworks, can you describe your approach to designing and implementing a RESTful API for a new feature in a larger system, and how you would ensure its scalability and maintainability?",
+            "answer": "So, basically, I use, I I develop a power system with using the flask not the first API. That's it. All about this.",
+            "evaluation": {
+                "score": 1.9,
+                "feedback": "The response is extremely brief, unclear, and irrelevant to the question.  It mentions Flask, not FastAPI as requested, and lacks any details on design, implementation, scalability, or maintainability.  The candidate needs to significantly improve their ability to articulate their technical experience and problem-solving approach."
+            }
+        },
+        {
+            "question": "Can you please elaborate on your experience building RESTful APIs, including specific examples of how you've addressed scalability and maintainability challenges in previous projects, and clarify why you chose Flask over FastAPI in those instances?",
+            "answer": "So, because of flask is very lightweight and it's very use for the development of the food application. That's why I use flask instead of the first API first API is used in the production level apis things. So, for as of now, I don't need any kind of production related things, that's why",
+            "evaluation": {
+                "score": 2.5,
+                "feedback": "The answer lacks clarity, detail, and specifics.  It fails to address scalability and maintainability, provide concrete examples, or give a compelling reason for choosing Flask over FastAPI.  Significant improvement is needed in both technical explanation and communication."
+            }
+        },
+        {
+            "question": "Considering your experience building AI-powered applications using FastAPI and other frameworks, describe a challenging technical problem you encountered during a project and how you approached solving it.",
+            "answer": "Basically, first thing is used for the building, a production level API, in my AI powered into your application. I use first because I want to develop a production level application. That's why.",
+            "evaluation": {
+                "score": 1.9,
+                "feedback": "The response is incomprehensible and fails to address the question.  It lacks any description of a technical problem, the approach taken to solve it, or any relevant details about the project.  Focus on clearly explaining a specific technical challenge, your problem-solving process, and the outcome.  Use concrete examples and technical terminology."
+            }
+        },
+        {
+            "question": "Can you please describe the challenging technical problem you encountered in more detail, including the specific issue, your troubleshooting steps, and the final solution implemented?",
+            "answer": "I don't know.",
+            "evaluation": {
+                "score": 0,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Considering your experience building AI-powered applications, describe a situation where you had to choose between using Flask, Django, or FastAPI for a project and explain your rationale for the selection.",
+            "answer": "I don't know about this.",
+            "evaluation": {
+                "score": 0.4,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Can you describe your experience building AI-powered applications, focusing on the technologies and frameworks you *did* use, and why those choices were made?",
+            "answer": "I don't know.",
+            "evaluation": {
+                "score": 0.4,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Considering your experience building AI-powered applications using FastAPI and Django,  describe a situation where you had to choose between these frameworks for a specific project, and justify your decision.",
+            "answer": "Sorry, I don't know.",
+            "evaluation": {
+                "score": 0.2,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Given your stated lack of experience with FastAPI and Django in the context of AI-powered applications, can you describe a project where you *would* consider using either framework, and what factors would influence your choice?",
+            "answer": "I don't know.",
+            "evaluation": {
+                "score": 0.6,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Considering your experience building AI-powered applications using both FastAPI and Django,  can you describe a situation where you had to choose between these frameworks for a particular project and explain your reasoning?",
+            "answer": "I don't have idea about this.",
+            "evaluation": {
+                "score": 2.8,
+                "feedback": "The answer is not suitable.  It lacks any relevant information regarding the question. The candidate should prepare examples showcasing their experience with FastAPI and Django and their decision-making process when selecting a framework for a project.  Consider practicing STAR method responses to structure your answers effectively."
+            }
+        },
+        {
+            "question": "Given your lack of experience directly comparing FastAPI and Django in an AI project context, can you describe projects where you used each framework individually, highlighting aspects of each that you found particularly suitable or challenging for AI applications?",
+            "answer": "so I don't have any kind of idea about this, you can ask me next week,",
+            "evaluation": {
+                "score": 0.4,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        }
+    ]
+}

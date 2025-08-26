@@ -1,0 +1,86 @@
+{
+    "candidateName": "Selena",
+    "interviewTimestamp": "2025-08-21T13-06-58",
+    "conversationLog": [
+        {
+            "question": "Can you describe your experience using React Hooks, specifically `useState` and `useEffect`, within the context of your \"Facial Recognition Attendance System\" project?",
+            "answer": "In my project that is facial recognition attendance system. I used reactors and their specific country.",
+            "evaluation": {
+                "score": 1.9,
+                "feedback": "The answer is largely incomprehensible and lacks any technical detail about React Hooks, `useState`, or `useEffect`.  It shows almost no understanding of the question or relevant experience.  The candidate needs to significantly improve their ability to articulate their technical skills."
+            }
+        },
+        {
+            "question": "Can you please clarify your response?  Your answer mentions \"reactors\" and a country, but doesn't describe how you used `useState` and `useEffect` in your facial recognition attendance system.  Can you detail your use of these React Hooks within the project?",
+            "answer": "like new state and use effect, where I build a system using that and use the",
+            "evaluation": {
+                "score": 1.6,
+                "feedback": "The answer is incomprehensible and does not address the prompt.  It fails to explain the use of useState and useEffect, offering instead a single, grammatically incorrect phrase.  The candidate needs to significantly improve their communication skills and technical explanation abilities."
+            }
+        },
+        {
+            "question": "Describe your experience integrating a RESTful API into a React application, drawing on your work in either the \"Facial Recognition Attendance System\" or \"Innovating Rural Education\" projects.",
+            "answer": "In my facial recognition system, I integrated a restful API to connect the react front end with the packing, facial service on the front end. I used Fetch and inside. Use the effect who to send captured image data and retire recognition results. For example, when a user captured, their face, the image was converted to base 64 and sent via post request to the back end. Endpoint the back end responded with the recognition result, which I then stored in a react state that is used state to instantly update the UI and Mark attendance,",
+            "evaluation": {
+                "score": 5.1,
+                "feedback": "The answer is relevant to the question but lacks clarity and precision.  The technical description needs significant improvement.  More detail on error handling, state management, and the specifics of the API interaction (including HTTP methods and data structures) is necessary.  Proofread carefully for grammar and spelling."
+            }
+        },
+        {
+            "question": "Can you elaborate on how you handled error conditions, such as network issues or API rate limiting, during the integration of the facial recognition API into the React application?",
+            "answer": "In my facial recognition attendance system. I placed a strong focus on robust error handling when integrating the facial recognition, rest API into the react front end and the network issues. I wrapped all the API calls in try and catch blocks and maintained it error States using use state to display meaningful feedback such as network error face try again, I also implemented. The try Logic for transient failures, for the system would automatically reattempt a failed requests before notifying the user.",
+            "evaluation": {
+                "score": 5.8,
+                "feedback": "The answer is relevant but lacks detail and precision.  Specific examples of error handling techniques (beyond try-catch) and how API rate limiting was addressed are missing.  Improve clarity by using more precise language and complete sentences."
+            }
+        },
+        {
+            "question": "Considering your experience with both the \"Facial Recognition Attendance System\" and \"Innovating Rural Education\" projects,  describe a challenging technical problem you encountered while building the React.js front-end and how you approached solving it.",
+            "answer": "User capture an image of the recognition API response. Could sometimes be delayed due to network conditions or server load. If I simply update State on every API call, the UI would freeze or show outdated data to solve this. I introduce loading states with use State handle a sink calls inside use effects and use conditionals gendering. So users, or spinner or retra options instead of blank screen.",
+            "evaluation": {
+                "score": 4.5,
+                "feedback": "The answer is difficult to understand and lacks detail.  The description of the technical problem is unclear, and the solution is poorly explained.  Use more precise technical terms and provide concrete examples.  Expand on the implementation details of 'loading states,' 'useState,' 'useEffects,' and 'conditionals.' Explain how these resolved the UI freezing and outdated data issues.  Focus on the React.js specific challenges. Mentioning the API response image capture seems tangential."
+            }
+        },
+        {
+            "question": "Can you elaborate on the \"conditionals rendering\" you implemented to manage the loading states and prevent the display of outdated data, specifically detailing the logic used to determine when to show the spinner, the retry option, and the actual image?",
+            "answer": "In this system, I you just never saw the data or a frozen UI, because loading spinner when the user captured, an image. And the API request was sent. I sent a uh, loading state to True during this state. Instead of showing all results. The UI displayed, a spinner with the message processing image.",
+            "evaluation": {
+                "score": 3.6,
+                "feedback": "The answer is difficult to understand and lacks detail.  It doesn't clearly explain the conditional logic for showing the spinner, retry option, and image.  More precise language and a structured explanation of the process are needed.  Consider using pseudocode or a flow chart to illustrate the conditional rendering logic."
+            }
+        },
+        {
+            "question": "Describe a situation where you had to debug a React component, explaining the steps you took to identify and resolve the issue.",
+            "answer": "And option. Also there and actual result, uh, with with success state will also",
+            "evaluation": {
+                "score": 1.2,
+                "feedback": "The response is incomprehensible and does not address the question.  It lacks any relevant information about debugging a React component.  Please provide a clear and detailed description of a real debugging experience, outlining the problem, your approach, and the solution."
+            }
+        },
+        {
+            "question": "Can you please describe the situation, the expected outcome, the actual outcome, and the steps you took to debug the React component, providing more detail?",
+            "answer": "In the facial recognition, attendance system, the react front end captured, an image from the webcam and sent it to the back end API for recognition. However, during testing, I noticed that when the User submitted a new image quickly, after a previous 1, the UI sometimes display. The old reserve, my expected outcome was the spinner should appear while the API request was in progress, was the back, end responded. The UI should update with the latest recognition result. If an error occurred, the user should see retry option instead of outdated results.",
+            "evaluation": {
+                "score": 4.7,
+                "feedback": "The response is difficult to understand due to grammatical errors and unclear phrasing.  While the situation and expected outcome are touched upon, the actual outcome and debugging steps lack detail and precision.  Improve clarity by using proper sentence structure and more descriptive language.  Specifically, detail the debugging steps taken (e.g., network analysis, console logs, component lifecycle inspection) and the specific solutions implemented. Quantify the 'quickly' and 'sometimes'.  Explain what 'old reserve' means."
+            }
+        },
+        {
+            "question": "Considering your experience building both the \"Facial Recognition Attendance System\" and \"Innovating Rural Education\" projects using React.js, describe a situation where you had to make a design decision to balance functionality with maintainability and scalability.",
+            "answer": "Actual outcome was sometimes the old recognition results persisted. Even though a new request had been triggered,",
+            "evaluation": {
+                "score": 2.4,
+                "feedback": "The answer is far too brief and lacks crucial details.  It doesn't describe a design decision, the reasoning behind it, or how it balanced functionality, maintainability, and scalability.  The response only mentions a problem without providing any context or solution."
+            }
+        },
+        {
+            "question": "Can you describe the design decision you made (or failed to make) that led to the persistence of old recognition results, and how that decision impacted the maintainability and scalability of the system?",
+            "answer": "Yes, initially I designed the react component. Only update state of the API response come back without resetting to all attendance. They choose when a new request started.",
+            "evaluation": {
+                "score": 3.5,
+                "feedback": "The answer is very unclear and lacks detail.  It doesn't explain the design decision, its impact on maintainability and scalability, or the context of 'old recognition results'.  The description needs significant improvement to be understandable and demonstrate technical proficiency.  Consider rephrasing using complete sentences, describing the system architecture, the data flow, and the consequences of the design choice on factors like database load, code complexity, and future feature development."
+            }
+        }
+    ]
+}

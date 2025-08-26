@@ -1,0 +1,265 @@
+/* === GENERAL & BODY STYLES === */
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  background-color: #f4f7fc;
+  color: #333;
+}
+
+/* === LAYOUTS & PANELS === */
+.main-layout {
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  gap: 16px;
+  height: calc(100vh - 32px);
+}
+
+.video-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 16px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.transcription-panel,
+.editor-section {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* === VIDEO & AGENT AVATAR === */
+/* This is the container for the agent's avatar */
+#agentAvatarBox {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2c2c2c;
+  border-radius: 8px;
+  position: relative;
+}
+
+#agentAvatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #4a4a4a;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* NEW: Style for when the agent is speaking */
+#agentAvatar.speaking {
+  box-shadow: 0 0 25px 8px #00aaff; /* A glowing blue effect */
+}
+
+/* This is the candidate's self-view video */
+#localVideo {
+  width: 150px;
+  height: 112px;
+  position: absolute;
+  bottom: 80px; /* Position above controls */
+  right: 16px;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  z-index: 10;
+  background: #000;
+}
+
+.username-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 13px;
+  padding: 4px 8px;
+  border-radius: 0 8px 0 8px;
+}
+
+/* === CALL CONTROLS === */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding-top: 16px;
+  flex-shrink: 0;
+}
+
+.controls button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.controls button:hover {
+  background-color: #4a4a4a;
+}
+
+/* 'Off' state for buttons like mic/cam mute */
+button.off {
+  background-color: #d32f2f !important;
+}
+
+/* === OVERLAYS & POPUPS (e.g., Join Prompt) === */
+.overlay, .join-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup, .join-box {
+  background: white;
+  padding: 24px 32px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.popup input, .join-box input {
+  display: block;
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+#joinBtn {
+  width: 100%;
+  padding: 12px 18px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+#joinBtn:hover {
+  background: #1565c0;
+}
+
+
+/* === TRANSCRIPTION & EDITOR PANELS === */
+.transcription-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+#transcript {
+  flex-grow: 1;
+  overflow-y: auto;
+  color: #333;
+  line-height: 1.6;
+  font-size: 15px;
+  padding-right: 10px; /* For scrollbar spacing */
+}
+
+.editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#codeArea {
+  width: 100%;
+  flex-grow: 1;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  border: 1px solid #333;
+  padding: 12px;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 14px;
+  border-radius: 6px;
+  resize: none;
+}
+
+#submitCode {
+  margin-top: 12px;
+  align-self: flex-end;
+  background: #388e3c;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+#submitCode:hover {
+  background: #2e7d32;
+}
+
+/* === CHAT POPUP === */
+.chat-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: none; /* Toggled by JS */
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+  z-index: 900;
+}
+
+#messages {
+  flex: 1;
+  overflow-y: auto;
+  font-size: 14px;
+  padding: 12px;
+}
+
+.chat-input-area {
+  display: flex;
+  padding: 8px;
+  border-top: 1px solid #eee;
+}
+
+#chatInput {
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 8px 12px;
+  margin-right: 8px;
+}
+
+#sendBtn {
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  flex-shrink: 0;
+}

@@ -1,0 +1,86 @@
+{
+    "candidateName": "On The Gate Party.",
+    "interviewTimestamp": "2025-08-20T07-08-34",
+    "conversationLog": [
+        {
+            "question": "Can you describe a challenging problem you encountered while developing your Keeper App using React, and explain how you approached solving it?",
+            "answer": "So in the keeper app, there was a a issue of the component. So maintaining components were was a",
+            "evaluation": {
+                "score": 1.8,
+                "feedback": "The response is incomprehensible and fails to address the question.  It lacks detail, context, and a clear explanation of the problem or solution.  The candidate needs to practice articulating technical challenges and problem-solving approaches clearly and concisely."
+            }
+        },
+        {
+            "question": "Can you please clarify the component issue you encountered and elaborate on what you mean by \"maintaining components were was a\"?",
+            "answer": "Quite a bit tough. So what I did, uh, for the particular module, uh, just separated the particular components and",
+            "evaluation": {
+                "score": 1.8,
+                "feedback": "The response is incomprehensible and fails to address the question.  It lacks clarity, detail, and professional communication.  The candidate needs to practice articulating technical issues concisely and effectively."
+            }
+        },
+        {
+            "question": "Considering your experience with the Keeper App, can you describe a specific challenge you faced managing component state and how you addressed it using React Hooks?",
+            "answer": "so basically, uh",
+            "evaluation": {
+                "score": 1.3,
+                "feedback": "The response is completely inadequate.  It demonstrates a lack of preparedness and fails to address the question in any meaningful way.  The candidate needs to significantly improve their ability to articulate their technical experience and problem-solving skills.  Practice structuring answers using the STAR method (Situation, Task, Action, Result) to provide concrete examples."
+            }
+        },
+        {
+            "question": "Can you please elaborate on your experience with the Keeper app, specifically describing a situation where you encountered a challenge managing component state using React?",
+            "answer": "To maintain a state. We can use a particular book which is named. It's a used State hook so that we can uh,",
+            "evaluation": {
+                "score": 1.9,
+                "feedback": "The response is incomprehensible and doesn't address the question.  It lacks any specifics about the Keeper app, React state management, or any encountered challenges. The candidate needs to significantly improve their ability to articulate technical experiences."
+            }
+        },
+        {
+            "question": "Can you describe a specific challenge you faced while developing your Keeper App using React, and how your approach to solving it demonstrated your understanding of React fundamentals like state management and component lifecycle?",
+            "answer": "I don't know about this.",
+            "evaluation": {
+                "score": 0.9,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Can you describe a different technical challenge you faced during a software development project, and how you approached its solution?",
+            "answer": "So the I can say, the main issue is related to talk about the version controls about the specific of framework or library and that's why there was a competitivity issue with the back end also. So what I did, I just use the docker for them. So there was a new issue of the version compatibility.",
+            "evaluation": {
+                "score": 3.5,
+                "feedback": "The answer is difficult to understand due to poor grammar and unclear terminology.  The description of the technical challenge and the solution is too vague and lacks specifics.  To improve, focus on clearly articulating the problem (what was the incompatibility? which versions?), the steps you took, and the outcome.  Use concrete examples and avoid jargon unless it's properly defined."
+            }
+        },
+        {
+            "question": "Describe a specific challenge you encountered while building your Keeper App and how you resolved it using React concepts like state management and component lifecycle.",
+            "answer": "So there was a no need of a component uh life cycle in the keeper app. It's just a front end app, just like a Google note app. It will maintain a particular note apps with a with a date and we can update and we can delete that note also.",
+            "evaluation": {
+                "score": 1.8,
+                "feedback": "The answer lacks clarity, relevance, and detail.  It fails to describe a specific challenge or demonstrate understanding of React concepts like state management and component lifecycle.  The response is too vague and doesn't address the question.  Consider re-structuring your answer to clearly articulate a specific problem, your approach to solving it (mentioning relevant React concepts), and the outcome."
+            }
+        },
+        {
+            "question": "Your response indicates you didn't utilize React's component lifecycle methods or state management in building the Keeper app.  Can you describe the architecture of your app and how data persistence and updates were handled without these features?",
+            "answer": "So there, uh, so there were, I used to use state to maintain the changes. And, uh, so there was no database for this project because this is just a front-end project. So, there is no need of the data persistent. So, it is just like UI based content project, so it will render on the screen. And it will, uh, it can be also removed from the screen also. So there is no data persistent. And yes, I use the State Management hook which is used state to maintain, uh, the, the modification. And, and the changes made in the note.",
+            "evaluation": {
+                "score": 3.5,
+                "feedback": "The answer is unclear, disorganized, and lacks detail.  It doesn't effectively explain the app's architecture or how data was handled without React's lifecycle methods or state management.  The candidate needs to practice structuring their responses and using precise technical language."
+            }
+        },
+        {
+            "question": "Describe a situation where you had to debug a React component in your Keeper app, detailing the steps you took to identify and resolve the issue.",
+            "answer": "There is no, that was in need of to debug the component because it's just a front end project. That's not a big deal to do this.",
+            "evaluation": {
+                "score": 1.3,
+                "feedback": "The response is completely inadequate and demonstrates a lack of understanding of debugging or the importance of the question.  It needs to clearly describe a specific debugging scenario, the steps taken, and the resolution.  Consider re-attempting the question, focusing on a real-world example and detailing your debugging process in a clear and structured way."
+            }
+        },
+        {
+            "question": "Can you describe a challenging problem you encountered while developing the Keeper app's front-end, even if it didn't require extensive debugging, and explain how you approached its solution?",
+            "answer": "project is based on a front end utility which is based on the used hook we can",
+            "evaluation": {
+                "score": 1.5,
+                "feedback": "The response is incomprehensible and does not address the question.  It lacks any detail about a problem, the approach to solving it, or even a coherent sentence structure.  The candidate needs to significantly improve their ability to articulate technical challenges and solutions."
+            }
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+{
+    "candidateName": "Tushar",
+    "interviewTimestamp": "2025-08-20T09-18-13",
+    "conversationLog": [
+        {
+            "question": "Describe your experience using React Hooks (useState, useEffect, etc.) in your Keeper App project, highlighting any challenges you encountered and how you overcame them.",
+            "answer": "So basically, I don't have any kind of experience in the react but I was a knowledgeable about the jungle and I am interested development.",
+            "evaluation": {
+                "score": 1.3,
+                "feedback": "The response is completely irrelevant and lacks any information about React Hooks or the Keeper App.  It indicates a significant gap in the required skills.  The candidate needs to honestly assess their skills and provide accurate information about their experience."
+            }
+        },
+        {
+            "question": "Given your stated lack of React experience, can you describe projects where you've used other JavaScript frameworks or libraries, and what you learned from those experiences?",
+            "answer": "So, I use that for the content development because I have the knowledge basic knowledge about the react. So, react is basically used for the building components in the front end applications.",
+            "evaluation": {
+                "score": 1.8,
+                "feedback": "The answer is largely irrelevant and lacks clarity.  It doesn't address the question about past projects using other JavaScript frameworks. The candidate needs to provide specific examples of projects and detail what they learned from those experiences."
+            }
+        },
+        {
+            "question": "Considering your Keeper App project utilized React's component, state, and props management, can you describe a situation where you had to manage complex state interactions and how you approached the solution?",
+            "answer": "Sorry, I don't have any kind of about this.",
+            "evaluation": {
+                "score": 1.1,
+                "feedback": "The response is completely inadequate.  It shows a lack of preparation and an inability to address a key aspect of the project.  The candidate needs to review the project and practice articulating technical challenges and solutions."
+            }
+        },
+        {
+            "question": "Can you describe a challenging technical problem you faced while working on the Keeper App, and how you attempted to solve it, even if it didn't directly involve complex state management in React?",
+            "answer": "So, while working on react is a challenging technical problem that I faced while working on the keeper.",
+            "evaluation": {
+                "score": 1.3,
+                "feedback": "The response is incomprehensible and fails to address the question.  It lacks any description of a technical problem, the attempted solution, or any relevant detail.  A complete rewrite focusing on a specific technical challenge and its solution is needed."
+            }
+        },
+        {
+            "question": "Describe a scenario from your Keeper App project where you had to manage component state effectively, and explain your approach to ensuring data consistency and efficient updates.",
+            "answer": "So basically I attempted differently and to solve the problem but I don't have that much knowledge about the State Management.",
+            "evaluation": {
+                "score": 1.7,
+                "feedback": "The response is insufficient and lacks detail.  It demonstrates a significant gap in understanding of component state management and the project.  The candidate should review relevant concepts and prepare a more detailed, concrete example.  Focus on describing the problem, chosen approach (even if not fully successful), and the outcome.  Avoid vague phrases like 'I attempted differently'."
+            }
+        },
+        {
+            "question": "Can you describe the problem you were trying to solve, even if you didn't fully implement a solution using state management techniques?  What approaches did you attempt, and what were the challenges you encountered?",
+            "answer": "so,",
+            "evaluation": {
+                "score": 1.2,
+                "feedback": "The response is completely inadequate.  It provides no information about a problem, attempted solutions, or encountered challenges.  The candidate needs to significantly improve their ability to articulate their experiences and technical skills. A complete rewrite is required."
+            }
+        },
+        {
+            "question": "Describe a situation from your Keeper App project where you had to manage component state and explain how you ensured data integrity.",
+            "answer": "for internal changeable data of component, its memory, use the use the cook in functions components, never",
+            "evaluation": {
+                "score": 1.8,
+                "feedback": "The answer is incomprehensible and does not address the question.  It lacks any explanation of a specific situation, the chosen state management solution, or how data integrity was maintained.  The response needs a complete rewrite focusing on a concrete example and a clear explanation of the techniques used."
+            }
+        },
+        {
+            "question": "Can you please elaborate on your approach to managing component state in the Keeper App project, specifically addressing how you handled internal, changeable data within functional components, and what strategies you employed to ensure data integrity?  Your previous response was unclear.",
+            "answer": "So uh prop sources, State prompts inputs from parent, State components, owns data with change Setter, then they need to remember something that can change from the inputs and a free data. So keep state in the closest and common parent.",
+            "evaluation": {
+                "score": 3.5,
+                "feedback": "The response is very unclear and lacks detail.  It mentions key concepts (props, state, setters) but fails to explain how they were applied in the Keeper App.  The phrasing is disorganized and unprofessional.  A complete rewrite is needed, focusing on concrete examples from the project to illustrate your approach to state management and data integrity."
+            }
+        },
+        {
+            "question": "Considering your experience with the Keeper App, which involved managing component state and props, describe a specific scenario where you had to debug a state-related issue and how you approached the problem-solving process.",
+            "answer": "So state is a internal change unchangeable data of components. It's mainly use the new state who can function component. So I never notability directly always.",
+            "evaluation": {
+                "score": 1.9,
+                "feedback": "The answer demonstrates a poor understanding of component state management and debugging.  It lacks clarity, relevance, and any specific example. The candidate needs to review fundamental concepts of React state management and practice articulating their problem-solving process."
+            }
+        },
+        {
+            "question": "Can you describe a specific example from your work with the Keeper app where you encountered a problem related to component state or props, even if you didn't directly manage it?  Let's focus on the symptoms you observed and how you attempted to understand the root cause.",
+            "answer": "Component is born lives and then lives, react gives a special function called life cycle matter, to run code during this stage. In models react function, we mostly use hooks.",
+            "evaluation": {
+                "score": 1.8,
+                "feedback": "The answer is largely irrelevant to the question and demonstrates a poor understanding of component state and props in React.  It lacks any specific example from the Keeper app and fails to describe any problem, symptoms, or troubleshooting efforts.  Focus on describing a real-world scenario and your problem-solving process.  Review fundamental React concepts."
+            }
+        }
+    ]
+}

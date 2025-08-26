@@ -1,0 +1,86 @@
+{
+    "candidateName": "Yes.",
+    "interviewTimestamp": "2025-08-26T11-22-42",
+    "conversationLog": [
+        {
+            "question": "Describe your experience using React Hooks (useState, useEffect, etc.) in your React.js projects, focusing on a specific example from your portfolio.",
+            "answer": "Now so as such I don't have that much experience. I'm not very happy but I have",
+            "evaluation": {
+                "score": 1.5,
+                "feedback": "The response lacks any relevant information about React Hooks.  It's crucial to directly address the question with specific examples and details from your projects.  Consider revising your answer to showcase your skills by describing a project where you used hooks, detailing which hooks you used, and explaining the problem you solved.  Focus on the 'how' and 'why' of your implementation."
+            }
+        },
+        {
+            "question": "Can you describe a React project where you attempted to use React Hooks, even if the implementation was incomplete or you faced challenges?  What did you learn from that experience?",
+            "answer": "So, I don't have access.",
+            "evaluation": {
+                "score": -0.7,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Describe the challenges you faced and how you overcame them during the development of your \"Facial Recognition Attendance System,\" focusing on the integration of the React.js frontend with the backend facial recognition system.",
+            "answer": "I don't know.",
+            "evaluation": {
+                "score": 0.8,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Can you describe your overall experience working on the Facial Recognition Attendance System, even if you don't recall specific challenges related to the React.js and backend integration?",
+            "answer": "So that's why I don't have such experience.",
+            "evaluation": {
+                "score": 1.1,
+                "feedback": "The response is completely inadequate.  It fails to address the question and provides no information about the candidate's experience.  The candidate needs to demonstrate experience, even if it doesn't directly relate to the specific technologies mentioned.  A more thorough and detailed answer showcasing relevant skills and experiences is required."
+            }
+        },
+        {
+            "question": "Considering your experience building the Facial Recognition Attendance System and your familiarity with React, describe your approach to integrating a React frontend with a backend system, focusing on how you handled data transfer and potential challenges you encountered.",
+            "answer": "So basically while the building that the system, I have been going to documentation as well as coding related issues, but while the building that process,",
+            "evaluation": {
+                "score": 1.5,
+                "feedback": "The answer is incomprehensible and does not address the question.  It lacks any technical detail or relevant information about the integration process, data transfer methods, or challenges faced. The candidate needs to significantly improve their communication skills and ability to articulate technical concepts."
+            }
+        },
+        {
+            "question": "Can you please elaborate on your approach to integrating the React frontend with the backend system for the Facial Recognition Attendance System, specifically detailing how you handled data transfer (e.g., API calls, data formats) and any challenges you faced during the development process?",
+            "answer": "No, I don't have so.",
+            "evaluation": {
+                "score": 0.1,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Describe your experience using React Hooks in the development of your \"Facial Recognition Attendance System\" project, focusing on how they improved the user interface or application functionality.",
+            "answer": "So, I don't know.",
+            "evaluation": {
+                "score": 0.4,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Given your lack of experience with React Hooks in the Facial Recognition Attendance System project, can you describe your experience with React in general, and perhaps explain why you chose not to utilize hooks in this specific project?",
+            "answer": "So because of I don't know that much I don't have that much. I about I have so that's why I'm not able to integrate the books. In there you said recognition",
+            "evaluation": {
+                "score": 1.9,
+                "feedback": "The candidate's response is incomprehensible and lacks any relevant information regarding their React experience or reasoning for not using Hooks.  Significant improvement is needed in communication and technical explanation.  The answer shows a lack of understanding of both React and the question itself."
+            }
+        },
+        {
+            "question": "Considering your experience building the Facial Recognition Attendance System, describe your approach to handling state management within the React frontend, specifically addressing how you managed the real-time updates of attendance data.",
+            "answer": "It. Yes, I don't know that much.",
+            "evaluation": {
+                "score": 1.8,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Can you describe your understanding of state management in React, even if you didn't directly use it in that specific project?",
+            "answer": "Chat about the statement. I mean, the react will feel so I don't have that much knowledge about this.",
+            "evaluation": {
+                "score": 1.3,
+                "feedback": "The response is incomprehensible and demonstrates a lack of understanding of state management in React.  The candidate needs to revisit fundamental React concepts and practice articulating their knowledge clearly and concisely."
+            }
+        }
+    ]
+}

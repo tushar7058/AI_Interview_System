@@ -1,0 +1,86 @@
+{
+    "candidateName": "Tushar",
+    "interviewTimestamp": "2025-08-20T06-24-25",
+    "conversationLog": [
+        {
+            "question": "Considering your experience building AI-powered applications using FastAPI and Django,  describe a challenging technical problem you encountered during one of your projects and how you approached solving it.",
+            "answer": "So I don't have any kind of bad about this.",
+            "evaluation": {
+                "score": 0.1,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Can you describe a technically challenging situation you faced while working with FastAPI or Django, even if it wasn't necessarily a \"problem\" in the traditional sense?",
+            "answer": "So I don't have any kind of idea about these what I have done knowledge about the first API teach and go. But uh while the resolving problems in the, in the both systems, there is multiple things we have to analyze.",
+            "evaluation": {
+                "score": 1.3,
+                "feedback": "The response is incomprehensible and doesn't address the question.  The candidate needs to significantly improve their communication skills and demonstrate practical experience with FastAPI or Django.  Consider preparing specific examples beforehand."
+            }
+        },
+        {
+            "question": "Considering your experience building AI-powered applications using both FastAPI and Django,  can you describe your preferred framework for a new project and explain why, highlighting the trade-offs involved?",
+            "answer": "No, I don't have. Wow. My. Agent.",
+            "evaluation": {
+                "score": 1.3,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Can you please clarify your response?  It seems incomplete.",
+            "answer": "No.",
+            "evaluation": {
+                "score": 1.8,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Describe a situation where you had to debug a complex Python application, explaining your approach to identifying and resolving the issue.",
+            "answer": "So, uh, I was on a several projects in from that, uh, so build multiple projects, like AI, powered into 16 articles, reservations system as well as Titanic uh, prediction like where Titanic is going to go into uh to their end point or not. It's like the project developing the Titan application. So my complex project is that so uh building a build a air power into your system. So that 1 was very the project. I have been working on so far, that's it.",
+            "evaluation": {
+                "score": 1.9,
+                "feedback": "The response is extremely unclear and lacks any specific details about a debugging experience.  It's difficult to understand what projects were involved, what the problem was, and how it was solved.  The candidate needs significant improvement in structuring their answers and providing concrete examples."
+            }
+        },
+        {
+            "question": "Can you please describe one specific complex debugging challenge you faced within any of those projects, detailing the symptoms, your debugging steps, and the ultimate solution?",
+            "answer": "No, I don't have any kind of fight about the people in process.",
+            "evaluation": {
+                "score": 0.8,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Considering your experience building AI-powered applications with both FastAPI and Django,  describe a situation where you had to choose between these frameworks for a specific project and justify your decision.",
+            "answer": "And so I don't have any kind of fire about this. I have the knowledge about the basic python",
+            "evaluation": {
+                "score": 1.3,
+                "feedback": "The response is completely irrelevant and lacks any substance.  It does not address the question at all.  The candidate needs to significantly improve their ability to answer technical questions related to their experience.  They should prepare examples of projects and decisions they made, focusing on concrete details."
+            }
+        },
+        {
+            "question": "Can you describe a hypothetical scenario where you would choose between FastAPI and Django for an AI application, outlining the factors influencing your decision?",
+            "answer": "No. Technical support. No, I don't have any kind of right about this.",
+            "evaluation": {
+                "score": 0.9,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Considering your experience building AI-powered applications with both FastAPI and Django,  describe a situation where you had to make a design choice that prioritized either scalability, maintainability, or performance, and explain your reasoning.",
+            "answer": "Okay, so I don't know about this.",
+            "evaluation": {
+                "score": 0.3,
+                "feedback": "The response has some relevance but lacks depth or clarity. Provide more structured and detailed points."
+            }
+        },
+        {
+            "question": "Can you describe a challenging design decision you faced while building any application, even if it wasn't AI-powered or using FastAPI/Django, and explain the trade-offs you considered?",
+            "answer": "So basically I work on projects, like with the help of jungle and the first API, but specifically, I use the flask framework because the flask framework is very lightweight for the building, uh, apis for the web application. So that's why I don't have any kind of how I have this. So that's it from my side.",
+            "evaluation": {
+                "score": 1.8,
+                "feedback": "The answer is incomprehensible and fails to address the question.  It lacks specific details about a design challenge, the trade-offs considered, and uses unclear language ('jungle and the first API'). The candidate needs significant improvement in articulating technical experiences and problem-solving skills."
+            }
+        }
+    ]
+}

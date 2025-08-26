@@ -1,0 +1,23 @@
+Candidate Name: Candidate
+Interview Time: 2025-08-12_15-47
+
+Q: You mentioned using FastAPI for building APIs in your internship at MGS Technology. Can you describe a specific challenge you faced while developing or deploying an API using FastAPI and how you overcame it?
+A: begin vid d f u mention using fast Tu bi for building a Pi I ine your internal ship MGS Technology can u discribe d specific challenge u face Tu looking for deploying and API using fast Tu bi and how u over king is I dont have any kind off fire related Tu dait u can close ITE
+Feedback: The candidate's response is unintelligible and does not address the question. The audio appears corrupted or the candidate was providing a nonsensical answer. There is no mention of a challenge, solution, or even a coherent technical concept related to FastAPI or API development. The response demonstrates a complete lack of understanding or inability to communicate relevant information. (Score: 1.0/10)
+
+Q: Based on your experience with both Django and FastAPI, what are the key differences you've observed in their performance and scalability when building RESTful APIs?
+A: camera experience vid both Jain go and faster fee what r d ki differences u hobs off ine deyar performance and scale ability when building restful
+Feedback: The candidate's response is unintelligible and provides no relevant information regarding Django, FastAPI, performance, scalability, or RESTful APIs. It does not address the prompt at all and suggests a significant lack of understanding or preparation. (Score: 1.0/10)
+
+Q: In your project involving the AI quiz evaluator, you used NLP techniques with Django. Can you elaborate on the specific NLP techniques you applied and how you integrated them within the Django framework?
+A: I dont want Tu answer dis question.
+Feedback: The candidate's response is completely unacceptable. Refusing to answer a technical question directly related to a stated project demonstrates a severe lack of professionalism and competence. It raises serious concerns about the candidate's honesty and ability to communicate effectively and collaborate. The response offers no insight into their technical skills or project experience. (Score: 1.0/10)
+
+Q: You've used Docker in your projects. Can you explain a scenario where using Docker significantly improved your development workflow or deployment process?
+A: Docker ine your projects can u explain D sinari where using docker significantly improved your development work flow aur deployment process.
+Feedback: The candidate's response is unintelligible and doesn't address the question. It appears to be a repetition of the question itself with significant grammatical errors. The candidate needs to provide a specific scenario demonstrating how Docker improved their workflow or deployment, highlighting the benefits gained, and explaining the context in which Docker was used. (Score: 2.0/10)
+
+Q: You've used Docker in your projects. Can you explain a scenario where using Docker significantly improved your development workflow or deployment process?
+A: Nau I dont want Tu answer u
+Feedback: The candidate's response is completely unacceptable and unprofessional. Refusing to answer a standard interview question demonstrates a lack of cooperation, poor communication skills, and potentially a lack of preparedness for the interview. This response provides no insight into the candidate's skills or experience with Docker or any other relevant technology. It warrants a very low score. (Score: 1.0/10)
+
